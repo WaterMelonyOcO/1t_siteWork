@@ -24,6 +24,7 @@
     background-image: url("../media/image/banner.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-bottom: 50px;
 }
 
 .head-string{
@@ -50,33 +51,33 @@
 .center{
     margin:auto;
     max-width: 1500px;
- }
+}
 
- .section-one{
-    display:block;
-    margin-left:auto;
-    margin-right: auto;
-    margin-top: 80px;
-    width: 920px;
-    height: 385px;
- }
+.section-one{
+display:block;
+margin-left:auto;
+margin-right: auto;
+margin-top: 80px;
+width: 920px;
+height: 385px;
+}
 
- .head-whywe{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 37px;
-    line-height: 20px;
- }
+.head-whywe{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 37px;
+line-height: 20px;
+}
 
- .lists-whywe{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding:60px;
- }
+.lists-whywe{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding:60px;
+}
 
- .list-whywe-element{
+.list-whywe-element{
     display: flex;
     width: 395px;
     height: 70px;
