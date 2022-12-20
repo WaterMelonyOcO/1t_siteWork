@@ -118,6 +118,87 @@
     border-radius: 10px;
 }
 
+.card_Img > .btn_a{
+    position: absolute;
+    top: 79%;
+    right: 0.5em;
+    box-shadow: none;
+    text-align: center;
+}
+
+/* ///////////// */
+
+/* видеодневники */
+
+#video_Dic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+
+    width: 100%;
+    height: 434px;
+}
+
+#video_Dic > .video_Header{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    
+    width: 403px;
+    height: 124px;
+}
+
+.video_Header > .text_header{
+    font-weight: 700;
+    font-size: 37px;
+    margin-bottom: 24px;
+
+}
+
+.video_Header > .text_p{
+    font-size: 20px;
+    line-height: 20px;
+    /* text-align: justify; */
+    /* line-height: 20px; */
+}
+
+/* видео вставки */
+
+#video_Dic > .video_prev{
+
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    /* height: 270px; */
+    max-height: 570px;
+
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+
+}
+
+.video_prev > .video_pl{
+    background-color: gray;
+    width: 485px;
+    min-height: 260px;
+    max-height: 270px;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+/* ///////////////////////// */
+
+/* общая настройка кнопок  */
+
 .btn{
     width: 169px;
     min-height: 47px;
@@ -130,14 +211,15 @@
     color: white;
     line-height: 24px;
     letter-spacing: 0.4px;
+    font-weight: 700;
 }
 
-.card_Img > .btn_a{
-    position: absolute;
-    top: 79%;
-    right: 0.5em;
-    box-shadow: none;
-    text-align: center;
+.btn:hover{
+    background-color: #2fe5a8;
 }
 
-/* ///////////// */
+.btn:active{
+    background-color: #1aaa7a;
+}
+
+/* ////////////////// */
