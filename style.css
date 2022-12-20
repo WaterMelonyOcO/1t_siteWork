@@ -1,26 +1,143 @@
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    src: url("./fonts/Roboto/Roboto-Regular.ttf"),
+    url(./fonts/Roboto/Roboto-Bold.ttf),
+    url(./fonts/Roboto/Roboto-Black.ttf);
+}
+
+
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
-section{
-    margin: 10px 20px;
+#cards{
+    margin-bottom: 55px;
 }
 
-.cards{
-    display: flex;
+.sub_Card{
+    margin-left: 127px;
+    position: relative;
+    
+}
+
+/* оглавление */
+
+.card_Header{
+    width: 495px;
+    height: 180px;
+
+    margin-bottom: 60px;
+    
+
+}
+.card_Header > h2{
+    text-transform: uppercase;
+    font-size: 37px;
+    width: 75%;
+    padding-bottom: 24px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    
+
+}
+.card_Header > p{
+    font-size: 17px;
+    width: 100%;
+    line-height: 20px;
     text-align: left;
-    align-items: left;
 }
+/* ////////////// */
 
-.card_Place{
+/* карточки */
+.cards_Place{
+    display: flex;
     margin-top: 30px;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow-x: scroll;
 }
 
-.card{
-    width: 100px;
-    height: 200px;
-    border: 3px;
-    border-color: gray;
-    padding: 10px 10px;
+/* заголовки */
+.card_info{
+    white-space: wrap;
+    max-width: 390px;
+    min-height: 76px;
 }
+.card_info > .card_Name{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.card_info > .card_p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/* настройка для каждой карты */
+.card{
+    white-space: wrap;
+    min-width: 460px;
+    height: 500px;
+    border: solid black 2px;
+    border-radius: 10px;
+    
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    padding: 53px 38px;
+    background-color: #CCCCCC69;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* сецкция с кнопкой и картинкой */
+.card_Img{
+    margin-top: 28px;
+    max-width: 340px;
+    height: 290px;
+
+    border: solid black 1px;
+    border-radius: 10px;
+    
+    position: relative;
+}
+
+.card_Img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.btn{
+    width: 169px;
+    min-height: 47px;
+    background: #1EC28B;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 0;
+
+    font-size: 14px;
+    color: white;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.card_Img > .btn_a{
+    position: absolute;
+    top: 79%;
+    right: 0.5em;
+    box-shadow: none;
+    text-align: center;
+}
+
+/* ///////////// */
