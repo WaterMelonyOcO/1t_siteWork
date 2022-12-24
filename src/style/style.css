@@ -1,18 +1,22 @@
-
 @font-face {
-    font-family: Roboto ;
+    font-family: Roboto;
     src: url("../fonts/Roboto/Roboto-Regular.ttf"),
-    url("../fonts/Roboto/Roboto-Bold.ttf"),
-    url("../fonts/Roboto/Roboto-Black.ttf");
+        url("../fonts/Roboto/Roboto-Bold.ttf"),
+        url("../fonts/Roboto/Roboto-Black.ttf");
 }
 
 @font-face {
-    font-family: 'Open Sans' ;
+    font-family: 'Merriweather';
+    src: url("../fonts/Merriweather/Merriweather-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Open Sans';
     src: url("../fonts/Open_sans/OpenSans-Regular.ttf");
 }
 
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
@@ -20,7 +24,7 @@
 }
 
 /* header Льва */
-.header-base{
+.header-base {
     max-width: 1440px;
     height: 725px;
     display: flex;
@@ -32,17 +36,17 @@
     padding-bottom: 20px;
 }
 
-.head-string{
-    display:block;
-    margin-left:auto;
+.head-string {
+    display: block;
+    margin-left: auto;
     margin-right: auto;
     width: 1140px;
     height: 83px;
 }
 
-.choose{
-    display:block;
-    margin-left:auto;
+.choose {
+    display: block;
+    margin-left: auto;
     margin-right: auto;
 
     width: 946px;
@@ -53,40 +57,40 @@
     border-radius: 20px;*/
 }
 
-.center{
-    margin:auto;
+.center {
+    margin: auto;
     max-width: 1500px;
 }
 
-.section-one{
-display:block;
-margin-left:auto;
-margin-right: auto;
-margin-top: 80px;
-width: 920px;
-height: 385px;
+.section-one {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: 920px;
+    height: 385px;
 }
 
-.head-whywe{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 37px;
-line-height: 20px;
+.head-whywe {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 20px;
 }
 
-.lists-whywe{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-padding:60px;
+.lists-whywe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px;
 }
 
-.list-whywe-element{
+.list-whywe-element {
     display: flex;
     width: 395px;
     height: 70px;
-    align-items: center; 
+    align-items: center;
     list-style-image: url("../media/image/check-circle.png");
     font-family: 'Roboto';
     font-style: normal;
@@ -96,41 +100,42 @@ padding:60px;
     margin-bottom: 30px;
 }
 
-.list-whywe-element::before{
+.list-whywe-element::before {
     content: url("../media/image/check-circle.png");
     margin-right: 20px;
 }
 
-.list-inside{
+.list-inside {
     margin-top: 50px;
     margin-right: 90px;
-    
+
 }
 
 
 /* ///////////////////////////////////////////// */
-#cards{
+#cards {
     margin-top: 70px;
     margin-bottom: 55px;
 }
 
-.sub_Card{
+.sub_Card {
     margin-left: 127px;
     position: relative;
-    
+
 }
 
 /* оглавление */
 
-.card_Header{
+.card_Header {
     width: 495px;
     height: 180px;
 
     margin-bottom: 60px;
-    
+
 
 }
-.card_Header > h2{
+
+.card_Header>h2 {
     text-transform: uppercase;
     font-size: 37px;
     width: 75%;
@@ -138,19 +143,21 @@ padding:60px;
 
     font-family: 'Roboto';
     font-style: normal;
-    
+
 
 }
-.card_Header > p{
+
+.card_Header>p {
     font-size: 17px;
     width: 100%;
     line-height: 20px;
     text-align: left;
 }
+
 /* ////////////// */
 
 /* карточки */
-.cards_Place{
+.cards_Place {
     display: flex;
     margin-top: 30px;
     flex-direction: row;
@@ -159,17 +166,18 @@ padding:60px;
 }
 
 /* заголовки */
-.card_info{
+.card_info {
     white-space: wrap;
     max-width: 390px;
     min-height: 76px;
 }
-.card_info > .card_Name{
+
+.card_info>.card_Name {
     font-size: 24px;
     margin-bottom: 16px;
 }
 
-.card_info > .card_p{
+.card_info>.card_p {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -177,13 +185,13 @@ padding:60px;
 
 
 /* настройка для каждой карты */
-.card{
+.card {
     white-space: wrap;
     min-width: 460px;
     height: 500px;
     border: solid black 2px;
     border-radius: 10px;
-    
+
     margin-right: 20px;
     margin-bottom: 20px;
 
@@ -193,28 +201,28 @@ padding:60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 /* сецкция с кнопкой и картинкой */
-.card_Img{
+.card_Img {
     margin-top: 28px;
     max-width: 340px;
     height: 290px;
 
     border: solid black 1px;
     border-radius: 10px;
-    
+
     position: relative;
 }
 
-.card_Img > img{
+.card_Img>img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-.card_Img > .btn_a{
+.card_Img>.btn_a {
     position: absolute;
     top: 79%;
     right: 0.5em;
@@ -226,7 +234,7 @@ padding:60px;
 
 /* видеодневники */
 
-#video_Dic{
+#video_Dic {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,24 +246,24 @@ padding:60px;
     margin-bottom: 200px;
 }
 
-#video_Dic > .video_Header{
+#video_Dic>.video_Header {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     text-align: center;
-    
+
     width: 403px;
     height: 124px;
 }
 
-.video_Header > .text_header{
+.video_Header>.text_header {
     font-weight: 700;
     font-size: 37px;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
 
 }
 
-.video_Header > .text_p{
+.video_Header>.text_p {
     font-size: 20px;
     line-height: 20px;
     /* text-align: justify; */
@@ -264,11 +272,11 @@ padding:60px;
 
 /* видео вставки */
 
-#video_Dic > .video_prev{
+#video_Dic>.video_prev {
 
     display: flex;
-    flex-direction: row; 
-    align-items: center; 
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 
@@ -282,7 +290,7 @@ padding:60px;
 
 }
 
-.video_prev > .video_pl{
+.video_prev>.video_pl {
     background-color: gray;
     width: 485px;
     min-height: 260px;
@@ -297,7 +305,7 @@ padding:60px;
 
 /* общая настройка кнопок  */
 
-.btn{
+.btn {
     width: 169px;
     min-height: 47px;
     background: #1EC28B;
@@ -312,11 +320,11 @@ padding:60px;
     font-weight: 700;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #2fe5a8;
 }
 
-.btn:active{
+.btn:active {
     background-color: #1aaa7a;
 }
 
@@ -325,7 +333,7 @@ padding:60px;
 /* мария */
 
 /* reviews */
-.reviews_wrapper{
+.reviews_wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -334,42 +342,49 @@ padding:60px;
     text-align: center;
     background: #F4F8F7;
     margin-bottom: 65px;
-    }
-.reviews_title{
+}
+
+.reviews_title {
     margin-bottom: 25px;
     font-weight: 700;
     font-size: 37px;
     line-height: 20px;
-    
+
 }
-.reviews_text{
+
+.reviews_text {
     margin-bottom: 50px;
     width: 350px;
     display: flex;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    
+
 
 }
-.reviews_line{
-    display:flex ;
+
+.reviews_line {
+    display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
 }
-.reviews_item{
-    display:flex;
+
+.reviews_item {
+    display: flex;
     justify-content: space-between;
 }
-.reviews_img_left{
+
+.reviews_img_left {
     margin-left: 57px;
     margin-right: 10px;
 }
-.reviews_img_right{
+
+.reviews_img_right {
     margin-left: 114px;
-        margin-right: 10px;
+    margin-right: 10px;
 }
-.reviews_info{
+
+.reviews_info {
     width: 380px;
     font-family: 'Roboto';
     font-style: normal;
@@ -377,9 +392,10 @@ padding:60px;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.4px;
-    
+
 }
-.reviews_btn{
+
+.reviews_btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -394,7 +410,8 @@ padding:60px;
     border-radius: 20px;
 
 }
-.reviews_btn_link{
+
+.reviews_btn_link {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
@@ -405,49 +422,56 @@ padding:60px;
     font-style: normal;
 
 }
+
 /* form */
 
-.form{
+.form {
     display: flex;
     justify-content: center;
 }
 
 .form_title {
-font-weight: 700;
-font-size: 37px;
-width: 573px;
-height: 70px;
+    font-weight: 700;
+    font-size: 37px;
+    width: 573px;
+    height: 70px;
 
-display: flex;
-align-items: center;
-text-align: center;
-margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
 
 }
-form{
+
+form {
     padding: 30px;
-background: #F4F8F7;
-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1),
-0px 0px 2px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
+    background: #F4F8F7;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1),
+        0px 0px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
+
 .form-field_name_required {
     margin-bottom: 8px;
 }
+
 .form-field_name {
     margin-bottom: 8px;
 }
+
 .form-field_name_required::after {
     content: '*';
     color: red;
     margin-left: 5px;
 }
-.form-field{
+
+.form-field {
     margin-bottom: 30px;
     width: 535px;
     padding: 8px;
 }
-.form_btn{
+
+.form_btn {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -459,9 +483,10 @@ border-radius: 4px;
     background: #1EC28B;
     border: none;
 
-    
+
 }
-.btn_wrapper{
+
+.btn_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -473,7 +498,8 @@ border-radius: 4px;
     margin-left: 165px;
     margin-bottom: 30px;
 }
-.form_agreement{
+
+.form_agreement {
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
@@ -485,18 +511,216 @@ border-radius: 4px;
     letter-spacing: 0.4px;
     color: #C5C5C5;
 }
-.form_img{
 
-    background: url(../media/image/Vector.png) ;
+.form_img {
+
+    background: url(../media/image/Vector.png);
     background-size: 370px 470px;
     width: 370px;
     height: 370px;
 }
-.form_img_wrapper{
+
+.form_img_wrapper {
     display: flex;
     align-items: center;
     margin-left: 40px;
-    
+
 }
 
 /* ///////////////// */
+
+/* footer */
+
+.footer {
+    /* margin: 0px 130px; */
+    /* margin: 0 auto; */
+    margin-left: 127px;
+    margin-right: 75px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+/* зелёные эконки */
+.connectLinks {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    padding: 0px 30px;
+}
+
+.linkBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkBlock > img{
+    width: 38px;
+    height: 38px;
+    margin-bottom: 30px;
+}
+
+.email > img, .map > img{
+    width: 46px;
+    height: 46px;
+    margin-bottom: 30px;
+}
+
+.map > a{
+    text-decoration: none;
+    color: black;
+}
+/* верхняя линия */
+.upperHr {
+    margin-top: 40px;
+    margin-bottom: 52px;
+}
+
+/* различные блоки. О нас и т.д */
+.infoBlocks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+
+/* параметры для всех заголовков */
+.InfoHeader {
+    font-size: 20px;
+    font-family: 'Merriweather';
+}
+
+/* параметры для каждого блока */
+.infoBlock {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+/* доп настройка + ещё и для ссылок */
+.InfoLink,
+.InfoHeader {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+/* параметры для настроек */
+.InfoLink {
+    text-decoration: none;
+    color: black;
+}
+
+.InfoLink:last-child {
+    padding-bottom: 0px;
+}
+
+/* для нижней линии */
+.DownHr {
+    margin-top: 52px;
+    margin-bottom: 40px;
+}
+
+/* настройка для всего, что находиться в конце */
+.ElseInfoBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    font-family: 'Open Sans';
+}
+
+/* настройка для эконок соц. сетей */
+.IconLinks {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.IconLink>img {
+    width: 34px;
+    height: 34px;
+
+}
+
+/* vk подганял как мог */
+.VkIcon>img {
+    width: 40px;
+    height: 30px;
+}
+
+/* ту настрока для копирайта и текста */
+.ElseInfo {
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+/* для блока с копирайтом */
+.CopyriteBlock {
+    display: flex;
+    max-width: 220px;
+    justify-content: space-between;
+}
+
+.CopiriteText {
+    flex-wrap: wrap;
+    margin-left: 50px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/* для блока с согласием */
+.Agreement {
+    max-width: 500px;
+    text-align: right;
+    line-height: 25px;
+}
+
+/* немного не структурированно, но здесь настройка эконок для приложений */
+.paymentIcon {
+    margin-left: 30px;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+.paymentIcon:last-child {
+    padding-bottom: 0px;
+}
+
+/* доп настройка для нормального вертикального расширения */
+.AppsSub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    margin-left: 15px;
+}
+
+/* просто для блока с маркетами */
+.Apps {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.Apps>p {
+    font-size: 10px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+.Apps>img {
+    width: 20px;
+    height: 24px;
+}
+
+.Apps>p>.bolt {
+    font-size: 12px;
+    font-weight: bolder;
+}
