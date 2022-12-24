@@ -1,257 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="./src/style/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header>
-      <div class="header-base center">
-        <!--Следующие 2 строчки необходимо будет заменить, текущая версия просто для демонстрация, сделать такое интеркактивным будет сложно-->
-        <img
-          src="./src/media/image/header.png"
-          alt="Поисковая строка и проч."
-          class="head-string"
-        />
-        <img
-          src="./src/media/image/choose.png"
-          alt="Поиск тура? или типа того"
-          class="choose"
-        />
-      </div>
-    </header>
-    <section class="section-one">
-      <h1 class="head-whywe">ПОЧЕМУ МЫ?</h1>
-      <div class="lists-whywe">
-        <ul class="list-inside">
-          <li class="list-whywe-element">НЕИЗВЕСТНЫЕ МАРШРУТЫ</li>
-          <li class="list-whywe-element">САМЫЕ АКТУАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</li>
-          <li class="list-whywe-element">
-            ИНТЕРЕСНЫЕ ИСТОРИИ ОТ МЕСТНЫХ ЖИТЕЛЕЙ
-          </li>
-        </ul>
-        <ul class="list-inside">
-          <li class="list-whywe-element">ТУРЫ ОТ ПУТЕШЕСТВЕННИКОВ</li>
-          <li class="list-whywe-element">
-            ЛАЙФХАКИ И СОВЕТЫ ОТ ПУТЕШЕСТВЕННИКОВ
-          </li>
-          <li class="list-whywe-element">БЕЗОПАСНОСТЬ И ЭКСКЛЮЗИВНОСТЬ</li>
-        </ul>
-      </div>
-    </section>
-    <section id="cards">
-      <div class="sub_Card">
-        <div class="card_Header">
-          <h2 class="Auth_Header text_header">авторские туры по россии</h2>
-          <p class="Auth_p text_p">
-            На сайте представлены туры от гидов и путешественников, которые
-            лично побывали в тех местах. Они изучили местность и теперь каждый
-            из них хочет поделиться своим опытом с вами
-          </p>
-        </div>
-        <div class="cards_Place">
-          <div id="Baical" class="card">
-            <div class="card_info">
-              <h3 class="card_Name">Байкал</h3>
-              <p class="card_p">
-                Байкал - одно из величайших творений природы. Прочувствуйте
-                атмосферу этого места вместе с нами.
-              </p>
-            </div>
-            <div class="card_Img">
-              <img src="./src/media/image/picture_Baikal.png" />
-              <a class="btn_a"
-                ><button class="btn card_Button">смотреть</button></a
-              >
-            </div>
-          </div>
-          <div id="Krim" class="card">
-            <div class="card_info">
-              <h3 class="card_Name">Крымский полуостров</h3>
-              <p class="card_p">
-                Крым - 7 чудо света. Жаркий в летний сезон и заманчивый в
-                холодную зиму.
-              </p>
-            </div>
-            <div class="card_Img">
-              <img src="./src/media/image/picture_Crimea.png" />
-              <a class="btn_a"
-                ><button class="btn card_Button">смотреть</button></a
-              >
-            </div>
-          </div>
-          <div id="Dagestan" class="card">
-            <div class="card_info">
-              <h3 class="card_Name">Дагестан</h3>
-              <p class="card_p">
-                Край чудес. Полюбоваться закатом в пустыне, побродить по
-                развалинам и насладиться видами гор, озер и ущелий..
-              </p>
-            </div>
-            <div class="card_Img">
-              <img src="./src/media/image/picture_Dagestan.png" />
-              <a class="btn_a"
-                ><button class="btn card_Button">смотреть</button></a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="video_Dic">
-      <div class="video_Header">
-        <h2 class="text_header">Видеодневники</h2>
-        <p class="text_p">
-          Каждый тур уникален и незабываем! Посмотрите видео из наших
-          путешествий, чтобы прочувствовать атмосферу.
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="./src/style/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header-base center">
+      <!--Следующие 2 строчки необходимо будет заменить, текущая версия просто для демонстрация, сделать такое интеркактивным будет сложно-->
+      <img src="./src/media/image/header.png" alt="Поисковая строка и проч." class="head-string" />
+      <img src="./src/media/image/choose.png" alt="Поиск тура? или типа того" class="choose" />
+    </div>
+  </header>
+  <section class="section-one">
+    <h1 class="head-whywe">ПОЧЕМУ МЫ?</h1>
+    <div class="lists-whywe">
+      <ul class="list-inside">
+        <li class="list-whywe-element">НЕИЗВЕСТНЫЕ МАРШРУТЫ</li>
+        <li class="list-whywe-element">САМЫЕ АКТУАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</li>
+        <li class="list-whywe-element">
+          ИНТЕРЕСНЫЕ ИСТОРИИ ОТ МЕСТНЫХ ЖИТЕЛЕЙ
+        </li>
+      </ul>
+      <ul class="list-inside">
+        <li class="list-whywe-element">ТУРЫ ОТ ПУТЕШЕСТВЕННИКОВ</li>
+        <li class="list-whywe-element">
+          ЛАЙФХАКИ И СОВЕТЫ ОТ ПУТЕШЕСТВЕННИКОВ
+        </li>
+        <li class="list-whywe-element">БЕЗОПАСНОСТЬ И ЭКСКЛЮЗИВНОСТЬ</li>
+      </ul>
+    </div>
+  </section>
+  <section id="cards">
+    <div class="sub_Card">
+      <div class="card_Header">
+        <h2 class="Auth_Header text_header">авторские туры по россии</h2>
+        <p class="Auth_p text_p">
+          На сайте представлены туры от гидов и путешественников, которые
+          лично побывали в тех местах. Они изучили местность и теперь каждый
+          из них хочет поделиться своим опытом с вами
         </p>
       </div>
-      <div class="video_prev">
-        <!-- <video controls class="video_pl" preload="metadata">
+      <div class="cards_Place">
+        <div id="Baical" class="card">
+          <div class="card_info">
+            <h3 class="card_Name">Байкал</h3>
+            <p class="card_p">
+              Байкал - одно из величайших творений природы. Прочувствуйте
+              атмосферу этого места вместе с нами.
+            </p>
+          </div>
+          <div class="card_Img">
+            <img src="./src/media/image/picture_Baikal.png" />
+            <a class="btn_a"><button class="btn card_Button">смотреть</button></a>
+          </div>
+        </div>
+        <div id="Krim" class="card">
+          <div class="card_info">
+            <h3 class="card_Name">Крымский полуостров</h3>
+            <p class="card_p">
+              Крым - 7 чудо света. Жаркий в летний сезон и заманчивый в
+              холодную зиму.
+            </p>
+          </div>
+          <div class="card_Img">
+            <img src="./src/media/image/picture_Crimea.png" />
+            <a class="btn_a"><button class="btn card_Button">смотреть</button></a>
+          </div>
+        </div>
+        <div id="Dagestan" class="card">
+          <div class="card_info">
+            <h3 class="card_Name">Дагестан</h3>
+            <p class="card_p">
+              Край чудес. Полюбоваться закатом в пустыне, побродить по
+              развалинам и насладиться видами гор, озер и ущелий..
+            </p>
+          </div>
+          <div class="card_Img">
+            <img src="./src/media/image/picture_Dagestan.png" />
+            <a class="btn_a"><button class="btn card_Button">смотреть</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="video_Dic">
+    <div class="video_Header">
+      <h2 class="text_header">Видеодневники</h2>
+      <p class="text_p">
+        Каждый тур уникален и незабываем! Посмотрите видео из наших
+        путешествий, чтобы прочувствовать атмосферу.
+      </p>
+    </div>
+    <div class="video_prev">
+      <!-- <video controls class="video_pl" preload="metadata">
           <source type="video/mp4" src="./src/media/image/Video1.png" />
         </video>
         <video controls class="video_pl" preload="metadata">
           <source type="image/png" src="./src/media/image/Video2.png" />
         </video> -->
-        <img class="video_prev" src="./src/media/image/Video1.png">
-        <img class="video_prev" src="./src/media/image/Video2.png">
-      </div>
-      <div class="video_more">
-        <a class="btn_a video_btn"><button class="btn">больше видео</button></a>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="reviews_wrapper">
-        <h2 class="reviews_title">Отзывы</h2>
-        <h3 class="reviews_text">
-          Здесь вы можете посмотреть отзывы наших путешественников об авторах
-          туров.
-        </h3>
-        <div class="reviews_all">
-          <div class="reviews_line">
-            <div class="reviews_item">
-              <img
-                class="reviews_img_left"
-                src="./src/media/image/avatar1.png"
-                alt="avatar"
-              />
-              <p class="reviews_info">
-                Евгения - замечательный гид. Прекрасно организованный тур по
-                Алтаю, все четко - встреча, сопровождение, экскурсии, заселение
-                в гостиницу.
-              </p>
-            </div>
-            <div class="reviews_item">
-              <img
-                class="reviews_img_right"
-                src="./src/media/image/avatar2.png"
-                alt="avatar"
-              />
-              <p class="reviews_info">
-                Огромное спасибо гиду Кириллу за незабываемое путешествие.
-                Поймали Северное сияние, попробовали местные специалитеты,
-                увидели китов. Отлично организованный тур.
-              </p>
-            </div>
-          </div>
-          <div class="reviews_line">
-            <div class="reviews_item">
-              <img
-                class="reviews_img_left"
-                src="./src/media/image/avatar3.png"
-                alt="avatar"
-              />
-              <p class="reviews_info">
-                Мне и моей семье очень понравился гид Эльдар и тур в Дагестан.
-                Проезд на джипах был комфортным. Программа тура насыщенная и
-                сбалансированная. Все достопримечательности удалось посетить.
-              </p>
-            </div>
-            <div class="reviews_item">
-              <img
-                class="reviews_img_right"
-                src="./src/media/image/avatar4.png"
-                alt="avatar"
-              />
-              <p class="reviews_info">
-                Рекомендуем авторский тур Дмитрия - Зимний лёд Байкала. Дмитрий
-                - отличный организатор и интересный рассказчик. Тур очень
-                насыщенный впечатлениями всего за 4 дня.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="reviews_btn">
-          <a class="reviews_btn_link" href="#">СМОТРЕТЬ ОТЗЫВЫ</a>
-        </div>
-      </div>
-    </section>
-    <section class="form">
-      <div class="form_all">
-        <h2 class="form_title">
-          Мы поможем выбрать тури организуем ваше путешествие
-        </h2>
-        <form>
-          <div class="form-name">
-            <h3 class="form-field_name_required">Имя</h3>
-            <div>
-              <input
-                class="form-field"
-                name="user"
-                required
-                type="text"
-                placeholder="Your Name"
-                tabindex="1"
-              />
-            </div>
-          </div>
-          <div class="form-name_">
-            <h3 class="form-field_name_required">Телефон</h3>
-            <div>
-              <input
-                class="form-field"
-                name="user"
-                required
-                type="tel"
-                placeholder="+7 (000) 000 00 00"
-                tabindex="2"
-              />
-            </div>
-          </div>
-          <div class="form-name">
-            <h3 class="form-field_name">Почта</h3>
-            <div>
-              <input
-                class="form-field"
-                name="E-mail"
-                type="email"
-                placeholder="Your E-mail"
-                tabindex="3"
-              />
-            </div>
-          </div>
-          <div>
-            <div class="btn_wrapper">
-              <button class="form_btn" type="submit">ОТПРАВИТЬ</button>
-            </div>
-            <p class="form_agreement">
-              Нажимая отправить, Вы соглашаетесь с Условиями и Правилами
-              компании.
+      <img class="video_prev" src="./src/media/image/Video1.png">
+      <img class="video_prev" src="./src/media/image/Video2.png">
+    </div>
+    <div class="video_more">
+      <a class="btn_a video_btn"><button class="btn">больше видео</button></a>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="reviews_wrapper">
+      <h2 class="reviews_title">Отзывы</h2>
+      <h3 class="reviews_text">
+        Здесь вы можете посмотреть отзывы наших путешественников об авторах
+        туров.
+      </h3>
+      <div class="reviews_all">
+        <div class="reviews_line">
+          <div class="reviews_item">
+            <img class="reviews_img_left" src="./src/media/image/avatar1.png" alt="avatar" />
+            <p class="reviews_info">
+              Евгения - замечательный гид. Прекрасно организованный тур по
+              Алтаю, все четко - встреча, сопровождение, экскурсии, заселение
+              в гостиницу.
             </p>
           </div>
-        </form>
-        <div class="form_img_wrapper">
-          <img
-            class="form_img"
-            src="./src/media/image/man_and_woman_with_map.png"
-            alt="man and woman with map"
-          />
+          <div class="reviews_item">
+            <img class="reviews_img_right" src="./src/media/image/avatar2.png" alt="avatar" />
+            <p class="reviews_info">
+              Огромное спасибо гиду Кириллу за незабываемое путешествие.
+              Поймали Северное сияние, попробовали местные специалитеты,
+              увидели китов. Отлично организованный тур.
+            </p>
+          </div>
+        </div>
+        <div class="reviews_line">
+          <div class="reviews_item">
+            <img class="reviews_img_left" src="./src/media/image/avatar3.png" alt="avatar" />
+            <p class="reviews_info">
+              Мне и моей семье очень понравился гид Эльдар и тур в Дагестан.
+              Проезд на джипах был комфортным. Программа тура насыщенная и
+              сбалансированная. Все достопримечательности удалось посетить.
+            </p>
+          </div>
+          <div class="reviews_item">
+            <img class="reviews_img_right" src="./src/media/image/avatar4.png" alt="avatar" />
+            <p class="reviews_info">
+              Рекомендуем авторский тур Дмитрия - Зимний лёд Байкала. Дмитрий
+              - отличный организатор и интересный рассказчик. Тур очень
+              насыщенный впечатлениями всего за 4 дня.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
-  </body>
+      <div class="reviews_btn">
+        <a class="reviews_btn_link" href="#">СМОТРЕТЬ ОТЗЫВЫ</a>
+      </div>
+    </div>
+  </section>
+  <section class="form">
+    <div class="form_all">
+      <h2 class="form_title">
+        Мы поможем выбрать тури организуем ваше путешествие
+      </h2>
+      <form>
+        <div class="form-name">
+          <h3 class="form-field_name_required">Имя</h3>
+          <div>
+            <input class="form-field" name="user" required type="text" placeholder="Your Name" tabindex="1" />
+          </div>
+        </div>
+        <div class="form-name_">
+          <h3 class="form-field_name_required">Телефон</h3>
+          <div>
+            <input class="form-field" name="user" required type="tel" placeholder="+7 (000) 000 00 00" tabindex="2" />
+          </div>
+        </div>
+        <div class="form-name">
+          <h3 class="form-field_name">Почта</h3>
+          <div>
+            <input class="form-field" name="E-mail" type="email" placeholder="Your E-mail" tabindex="3" />
+          </div>
+        </div>
+        <div>
+          <div class="btn_wrapper">
+            <button class="form_btn" type="submit">ОТПРАВИТЬ</button>
+          </div>
+          <p class="form_agreement">
+            Нажимая отправить, Вы соглашаетесь с Условиями и Правилами
+            компании.
+          </p>
+        </div>
+      </form>
+      <div class="form_img_wrapper">
+        <img class="form_img" src="./src/media/image/man_and_woman_with_map.png" alt="man and woman with map" />
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="connectLinks">
+      <div class="linkBlock"></div>
+      <div class="linkBlock"></div>
+      <div class="linkBlock"></div>
+    </div>
+    <hr>
+  </footer>
+</body>
+
 </html>
