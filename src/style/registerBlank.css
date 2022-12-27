@@ -1,0 +1,115 @@
+#content {
+    margin: 0px 180px;
+    background: #F4F8F7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.registerBlocks {
+    display: flex;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+}
+
+.registerFildsBlockSub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 35px 20px;
+}
+
+.registerFildsBlock a{
+    text-decoration: none;
+    color: black;
+}
+
+.registerFildsBlock a:first-child {
+    margin-right: 20px;
+    text-decoration:underline;
+}
+.registerFildsBlock a:last-child {
+    color: #8B8B8B;
+}
+
+.wellcomeField {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 125px;
+
+    /* margin-bottom: 30px; */
+}
+
+.wellcomeText .headText {
+    margin-bottom: 20px;
+}
+
+/* /////// */
+
+/* register blocks */
+
+.regForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.regField {
+    margin-bottom: 20px;
+}
+
+/* .regField:last-child{
+    margin-bottom: 0px;
+} */
+
+.regField input {
+    width: 365px;
+    min-width: 265px;
+    height: 40px;
+
+    border-radius: 1px solid #666666;
+
+
+    margin-top: 8px;
+}
+
+/* ///////////////// */
+.agreement{
+    margin-bottom: 20px;
+}
+
+.agreement{
+    color: #8B8B8B;
+}
+
+.regButton button{
+    padding: 8px 16px;
+    gap: 8px;
+
+    width: 169px;
+    height: 32px;
+
+    color: white;
+    background: #1EC28B;
+    border-radius: 20px;
+
+    border-style: none;
+
+    margin-bottom: 30px;
+}
+
+.socialLinksBlock p{
+    color: #8B8B8B;
+    margin-right: 25px;
+}
+.socialLinksBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.socialLinks .socialLink{
+    display: inline;
+    margin-right: 33px;
+}
