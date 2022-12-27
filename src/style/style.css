@@ -443,6 +443,11 @@
 
 }
 
+.form_elem{
+    display: flex;
+    justify-content: space-around;
+}
+
 form {
     padding: 30px;
     background: #F4F8F7;

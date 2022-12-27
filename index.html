@@ -195,61 +195,63 @@
         <h2 class="form_title">
           Мы поможем выбрать тури организуем ваше путешествие
         </h2>
-        <form>
-          <div class="form-name">
-            <h3 class="form-field_name_required">Имя</h3>
+        <div class="form_elem">
+          <form>
+            <div class="form-name">
+              <h3 class="form-field_name_required">Имя</h3>
+              <div>
+                <input
+                  class="form-field"
+                  name="user"
+                  required
+                  type="text"
+                  placeholder="Your Name"
+                  tabindex="1"
+                />
+              </div>
+            </div>
+            <div class="form-name_">
+              <h3 class="form-field_name_required">Телефон</h3>
+              <div>
+                <input
+                  class="form-field"
+                  name="user"
+                  required
+                  type="tel"
+                  placeholder="+7 (000) 000 00 00"
+                  tabindex="2"
+                />
+              </div>
+            </div>
+            <div class="form-name">
+              <h3 class="form-field_name">Почта</h3>
+              <div>
+                <input
+                  class="form-field"
+                  name="E-mail"
+                  type="email"
+                  placeholder="Your E-mail"
+                  tabindex="3"
+                />
+              </div>
+            </div>
             <div>
-              <input
-                class="form-field"
-                name="user"
-                required
-                type="text"
-                placeholder="Your Name"
-                tabindex="1"
-              />
+              <div class="btn_wrapper">
+                <button class="form_btn" type="submit">ОТПРАВИТЬ</button>
+              </div>
+              <p class="form_agreement">
+                Нажимая отправить, Вы соглашаетесь с Условиями и Правилами
+                компании.
+              </p>
             </div>
+          </form>
+          <div class="form_img_wrapper">
+            <img
+              class="form_img"
+              src="./src/media/image/man_and_woman_with_map.png"
+              alt="man and woman with map"
+            />
           </div>
-          <div class="form-name_">
-            <h3 class="form-field_name_required">Телефон</h3>
-            <div>
-              <input
-                class="form-field"
-                name="user"
-                required
-                type="tel"
-                placeholder="+7 (000) 000 00 00"
-                tabindex="2"
-              />
-            </div>
-          </div>
-          <div class="form-name">
-            <h3 class="form-field_name">Почта</h3>
-            <div>
-              <input
-                class="form-field"
-                name="E-mail"
-                type="email"
-                placeholder="Your E-mail"
-                tabindex="3"
-              />
-            </div>
-          </div>
-          <div>
-            <div class="btn_wrapper">
-              <button class="form_btn" type="submit">ОТПРАВИТЬ</button>
-            </div>
-            <p class="form_agreement">
-              Нажимая отправить, Вы соглашаетесь с Условиями и Правилами
-              компании.
-            </p>
-          </div>
-        </form>
-        <div class="form_img_wrapper">
-          <img
-            class="form_img"
-            src="./src/media/image/man_and_woman_with_map.png"
-            alt="man and woman with map"
-          />
         </div>
       </div>
     </section>
