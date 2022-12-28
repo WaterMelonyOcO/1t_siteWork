@@ -1,8 +1,14 @@
+
+body{
+    margin-top: 30px;
+    max-height: 700px;
+}
 #content {
     margin: 0px 180px;
     background: #F4F8F7;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    
 }
 
 .registerBlocks {
@@ -16,7 +22,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    margin: 35px 20px;
+    margin: 35px 20px ;
 }
 
 .registerFildsBlock a{
@@ -112,4 +118,66 @@
 .socialLinks .socialLink{
     display: inline;
     margin-right: 33px;
+}
+
+/* Стили для страницы входа */
+
+.enterFildsBlock a:first-child {
+   
+    color: #8B8B8B;
+}
+
+.enterFildsBlock a:last-child {
+     margin-left: 20px;
+     text-decoration: underline;
+}
+.enterFildsBlock a {
+    text-decoration: none;
+    color: black;
+}
+
+.regFieldText{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+
+    color: #CCCCCC;
+    padding: 8px;
+
+}
+.form-after{
+    display: flex;
+
+}
+.form-after-text{
+    width: 104px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4px;
+
+    color: #8B8B8B;
+    margin-left: 125px;
+    text-decoration: none;
+}
+
+.enterButton button {
+    padding: 8px 16px;
+
+   width: 116px;
+   height: 32px;
+
+    color: white;
+    background: #1EC28B;
+    border-radius: 20px;
+    border-style: none;
+    margin-bottom: 30px;
+
 }
