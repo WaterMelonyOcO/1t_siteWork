@@ -116,6 +116,7 @@
 #cards {
     margin-top: 70px;
     margin-bottom: 55px;
+    
 }
 
 .sub_Card {
@@ -126,6 +127,16 @@
 
 /* оглавление */
 
+.text_header {
+    font-weight: 700;
+    font-size: 37px;
+    font-family: 'Merriweather';
+    text-transform: uppercase;
+    font-size: 37px;
+    /* margin-bottom: 24px; */
+
+}
+
 .card_Header {
     width: 495px;
     height: 180px;
@@ -135,23 +146,9 @@
 
 }
 
-.card_Header>h2 {
-    text-transform: uppercase;
-    font-size: 37px;
+.card_Header>.text_header {
     width: 75%;
     padding-bottom: 24px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-
-
-}
-
-.card_Header>p {
-    font-size: 17px;
-    width: 100%;
-    line-height: 20px;
-    text-align: left;
 }
 
 /* ////////////// */
@@ -163,106 +160,105 @@
     flex-direction: row;
     align-items: flex-start;
     overflow-x: scroll;
-}
 
-/* заголовки */
-.card_info {
-    white-space: wrap;
-    max-width: 390px;
-    min-height: 76px;
-}
-
-.card_info>.card_Name {
+    color: white;
     font-size: 24px;
-    margin-bottom: 16px;
-}
-
-.card_info>.card_p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-family: 'Open Sans';
 }
 
 
 /* настройка для каждой карты */
 .card {
     white-space: wrap;
-    min-width: 460px;
-    height: 500px;
-    border: solid black 2px;
+    min-width: 270px;
+    height: 400px;
     border-radius: 10px;
 
     margin-right: 20px;
     margin-bottom: 20px;
 
-    padding: 53px 38px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+
     background-color: #CCCCCC69;
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-/* сецкция с кнопкой и картинкой */
-.card_Img {
-    margin-top: 28px;
-    max-width: 340px;
-    height: 290px;
-
-    border: solid black 1px;
-    border-radius: 10px;
-
-    position: relative;
-}
-
-.card_Img>img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.card_Img>.btn_a {
-    position: absolute;
-    top: 79%;
-    right: 0.5em;
-    box-shadow: none;
     text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.4s ease-in-out;
+
 }
 
-/* ///////////// */
+.card:hover {
+
+    min-width: 370px;
+    height: 420px;
+
+}
+
+/* фоновые изображения для карточек */
+#Baical{
+    background-image: url('../media/image/picture_Baikal.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#Karelia{
+    background-image: url('../media/image/picture_karelia.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Altai{
+    background-image: url('../media/image/picture_altai.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Dagestan{
+    background-image: url('../media/image/picture_Dagestan.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 
 /* видеодневники */
 
 #video_Dic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
     /* justify-content: space-around; */
 
     width: 100%;
-    height: 434px;
 
-    margin-bottom: 200px;
+    margin-bottom: 50px;
+}
+.video_Dic_Sub{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+
 }
 
-#video_Dic>.video_Header {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+.VP{
+    margin-bottom: 40px;
+}
+
+.video_Dic_Sub>.video_more{
     text-align: center;
-
-    width: 403px;
-    height: 124px;
+    margin-bottom: 0px;
 }
 
-.video_Header>.text_header {
-    font-weight: 700;
-    font-size: 37px;
-    /* margin-bottom: 24px; */
-
+.video_Dic_Sub>.video_Header {
+    display: block;
+    margin-left: 127px;
+    width: 370px;
 }
 
+.video_Header_H{
+    margin-bottom: 24px;
+}
+.video_Header_text{
+    width: 90%;
+}
 .video_Header>.text_p {
     font-size: 20px;
     line-height: 20px;
@@ -271,27 +267,45 @@
 }
 
 /* видео вставки */
+.video_prev_block{
+    /* overflow-y:auto; */
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
 
-#video_Dic>.video_prev {
+.video_prev_block_sub {
 
     display: flex;
+
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
 
-    width: 100%;
-    /* height: 270px; */
-    max-height: 570px;
+    margin-left: -50px;
+    /* height: 100%; */
+    /* height: 270px;
+    max-height: 570px; */
 
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
+}
 
+.video_prev_block_sub>.i1, .video_prev_block_sub>.i3{
+
+    width: 485px;
+    height: 270px;
+}
+.video_prev_block_sub>.i2{
+    width: 560px;
+    height: 314px;
+    margin: 0px 20px;
+}
+
+.video_prev{
 
 }
 
 .video_prev>.video_pl {
-    background-color: gray;
+    /* background-color: gray; */
     width: 485px;
     min-height: 260px;
     max-height: 270px;
@@ -309,11 +323,12 @@
     width: 169px;
     min-height: 47px;
     background: #1EC28B;
-    border-radius: 20px;
+    border-radius: 8px;
     box-shadow: none;
     border: 0;
 
     font-size: 14px;
+    text-transform: uppercase;
     color: white;
     line-height: 24px;
     letter-spacing: 0.4px;
@@ -337,11 +352,14 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px 0px;
     text-align: center;
     background: #F4F8F7;
     margin-bottom: 65px;
+}
+.reviews_wrapper > .reviews_btn{
+    align-self: center;
 }
 
 .reviews_title {
@@ -350,6 +368,11 @@
     font-size: 37px;
     line-height: 20px;
 
+}
+
+.reviews_title_block{
+    margin-left: 127px;
+    text-align: left;
 }
 
 .reviews_text {
@@ -363,38 +386,62 @@
 
 }
 
-.reviews_line {
+
+/* карточки */
+.reviews_all{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
+    flex-direction: row;
+    justify-content: safe center;
+    align-content: center;
+
+    width: 100%;
+
+    padding: 0px 150px;
+
+    margin-bottom: 50px;
+
+
+    background-image: url("../media/image/rewiewsbackground.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-.reviews_item {
-    display: flex;
-    justify-content: space-between;
+
+
+.rewiews_card{
+    
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 28px 8px;
+    margin-right: 20px;
+    margin-top: 20.5vh;
+
+    width: 270px;
+    max-height: 360px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    overflow: hidden;
 }
 
-.reviews_img_left {
-    margin-left: 57px;
-    margin-right: 10px;
+.card_text{
+    text-overflow: ellipsis;
 }
 
-.reviews_img_right {
-    margin-left: 114px;
-    margin-right: 10px;
+.avatar_img_block{
+    margin-bottom: 16px;
+}
+.card_mark_name{
+    margin-bottom: 25px;
+}
+.card_mark_name>.author_name{
+    margin-bottom: 9px;
 }
 
-.reviews_info {
-    width: 380px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: 0.4px;
 
-}
 
+/* ////////////////// */
 .reviews_btn {
     display: flex;
     flex-direction: row;
