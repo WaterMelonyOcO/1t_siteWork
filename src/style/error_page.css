@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.error-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.ellipse-image{
+    position: absolute;
+    z-index: -5;
+}
+
+.error-image{
+    width: 657px;
+    height: 328px;
+    z-index: 10;
+}
+
+.error-content{
+    margin-right: 100px;   
+}
+
+.error-header{
+    font-family: 'Roboto';
+}
+
+.error-text{
+    margin-top: 70px;
+    font-family: 'Roboto';
+}
+
+.error-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    margin-top: 100px;
+
+    width: 169px;
+    height: 47px;
+
+    color:white;
+    background: #1EC28B;
+    border-radius: 20px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Дальше идут css для хидера(навигации)
+*/
+.header-base{
+    /* max-width: 1400px; */
+    width: 100%;
+    height: 83px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    background: #F4F8F7;
+}
+
+.logo{
+    width: 74px;
+    height: 45px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.navigation-button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.navigation-page{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.search-area{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 7px;
+    gap: 182px;
+
+    width: 264px;
+    height: 24px;
+
+    border: 1px solid #000000;
+    border-radius: 20px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.search-button{
+    position: relative;
+    left: -25px;
+}
+
+.number::before{
+    content: url("img/vector.png");
+    position: relative;
+    right: 10px;
+    top: 4px;
+}
+
+.navigation-form{
+    display: flex;
+    flex-direction: row-reverse;
+}

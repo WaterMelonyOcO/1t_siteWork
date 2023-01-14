@@ -10,39 +10,50 @@
 
   <body>
     <header>
-      <div class="header-base center">
-        <!--Следующие 2 строчки необходимо будет заменить, текущая версия просто для демонстрация, сделать такое интеркактивным будет сложно-->
-        <img
-          src="./src/media/image/header.png"
-          alt="Поисковая строка и проч."
-          class="head-string"
-        />
-        <img
-          src="./src/media/image/choose.png"
-          alt="Поиск тура? или типа того"
-          class="choose"
-        />
+      <div class="header-base">
+          <img src="./src/media/image/logo.png" alt="логотип" class="logo">
+          <div class="navigation-menu">
+              <a href="#" class="navigation-page">Кто мы</a>
+              <a href="#" class="navigation-page">Наши авторы</a>
+              <a href="#" class="navigation-page">В путешествие</a>
+          </div>
+          <form class="navigation-form">
+              <input type="search" name="text" class="search-area" placeholder="Поиск...">
+              <button class="navigation-button search-button"><img src="./src/media/image/search.png"></button>
+          </form>
+          <div>
+              <p class="number">+7 (000) 000 00 00</p>
+          </div>
+          <button class="navigation-button"><img src="./src/media/image/globe.png" alt="иконка глобуса"></button>
+          <button class="navigation-button"><img src="./src/media/image/burgmenu.png" alt="иконка меню"></button>
       </div>
-    </header>
-    <section class="section-one">
-      <h1 class="head-whywe">ПОЧЕМУ МЫ?</h1>
-      <div class="lists-whywe">
-        <ul class="list-inside">
-          <li class="list-whywe-element">НЕИЗВЕСТНЫЕ МАРШРУТЫ</li>
-          <li class="list-whywe-element">САМЫЕ АКТУАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</li>
-          <li class="list-whywe-element">
-            ИНТЕРЕСНЫЕ ИСТОРИИ ОТ МЕСТНЫХ ЖИТЕЛЕЙ
-          </li>
+      <div class="banner"></div>
+      <img src="./src/media/image/choose.png" alt="затычка временно" class="choose">
+  </header>
+  <section class="section-one">
+    <h1 class="head-whywe">ПОЧЕМУ МЫ?</h1>
+    <div class="lists-whywe">
+        <ul>
+            <img src="./src/media/image/driving.png" class="why-we-img">
+            <li class="list-whywe-element">НЕИЗВЕСТНЫЕ МАРШРУТЫ</li>
+            <img src="./src/media/image/galleryfavorite.png" class="why-we-img">
+            <li class="list-whywe-element">САМЫЕ АКТУАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</li>
+            <img src="./src/media/image/messagenotif.png" class="why-we-img">
+            <li class="list-whywe-element">ИНТЕРЕСНЫЕ ИСТОРИИ
+                    ОТ МЕСТНЫХ ЖИТЕЛЕЙ</li>
         </ul>
-        <ul class="list-inside">
-          <li class="list-whywe-element">ТУРЫ ОТ ПУТЕШЕСТВЕННИКОВ</li>
-          <li class="list-whywe-element">
-            ЛАЙФХАКИ И СОВЕТЫ ОТ ПУТЕШЕСТВЕННИКОВ
-          </li>
-          <li class="list-whywe-element">БЕЗОПАСНОСТЬ И ЭКСКЛЮЗИВНОСТЬ</li>
+        <ul class="list-two">
+            <img src="./src/media/image/people.png" class="why-we-img">
+            <li class="list-whywe-element">ТУРЫ ОТ ПУТЕШЕСТВЕННИКОВ</li>
+            <img src="./src/media/image/heart.png" class="why-we-img">
+            <li class="list-whywe-element">ЛАЙФХАКИ И СОВЕТЫ
+                ОТ ПУТЕШЕСТВЕННИКОВ</li>
+            <img src="./src/media/image/medalstar.png" class="why-we-img">
+            <li class="list-whywe-element">БЕЗОПАСНОСТЬ
+                И ЭКСКЛЮЗИВНОСТЬ</li>
         </ul>
-      </div>
-    </section>
+    </div>
+</section>
     <section id="cards">
       <div class="sub_Card">
         <div class="card_Header">
@@ -117,11 +128,11 @@
     <section class="reviews">
       <div class="reviews_wrapper">
         <div class="reviews_title_block">
-          <h2 class="reviews_title">Отзывы</h2>
-          <h3 class="reviews_text">
+          <h2 class="reviews_title text_header">Отзывы</h2>
+          <p class="reviews_text">
             Здесь вы можете посмотреть отзывы наших путешественников об авторах
             туров.
-          </h3>
+          </p>
         </div>
         <div class="reviews_all">
           <!-- 1 -->
@@ -159,7 +170,7 @@
           <div class="rewiews_card">
             <div class="avatar_img_block">
               <img
-                src="./src/media/image/avatar1.png"
+                src="./src/media/image/avatar2.png"
                 alt=""
                 class="avatar_img"
               />
@@ -190,7 +201,7 @@
           <div class="rewiews_card">
             <div class="avatar_img_block">
               <img
-                src="./src/media/image/avatar1.png"
+                src="./src/media/image/avatar3.png"
                 alt=""
                 class="avatar_img"
               />
@@ -221,7 +232,7 @@
           <div class="rewiews_card">
             <div class="avatar_img_block">
               <img
-                src="./src/media/image/avatar1.png"
+                src="./src/media/image/avatar4.png"
                 alt=""
                 class="avatar_img"
               />
