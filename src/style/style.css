@@ -422,177 +422,110 @@
 /* мария */
 
 /* reviews */
-.reviews_wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0px;
-    text-align: center;
-    background: #F4F8F7;
-    margin-bottom: 65px;
-}
-.reviews_wrapper > .reviews_btn{
-    align-self: center;
-}
 
-.reviews_title {
-    margin-bottom: 25px;
+*{
+    margin:0 auto;
+    padding: 0;
+}
+/* reviews */
+h2{
+    width: 183px;
+    height: 20px;
+    font-family: 'Merriweather';
+    font-style: normal;
     font-weight: 700;
     font-size: 37px;
     line-height: 20px;
-
+    margin-bottom: 30px;
 }
 
-.reviews_title_block{
-    margin-left: 127px;
-    text-align: left;
+.reviews_title_text{
+    width: 343px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 40px;
 }
-
-.reviews_text {
-    margin-bottom: 50px;
-    width: 350px;
-    display: flex;
+.reviews_title{
+    margin-right: 850px;
 }
-
-
-/* карточки */
-.reviews_all{
-    display: flex;
-    flex-direction: row;
-    justify-content: safe center;
-    align-content: center;
-
-    width: 100%;
-
-    padding: 0px 150px;
-
-    margin-bottom: 50px;
-
-
-    background-image: url("../media/image/rewiewsbackground.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-
-
-.rewiews_card{
-    
-    background-color: white;
-    border-radius: 10px;
-
-    padding: 28px 8px;
-    margin-right: 20px;
-    margin-top: 20.5vh;
-
+/* cards */
+.reviews_card{
+    position: relative;
     width: 270px;
-    max-height: 360px;
-
+    height: 347px;
+   
+    background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 165px;
+    z-index: auto;
+    margin-right: 20px;
+}
+.reviews_card:first-child{
+    margin-left: 150px;
 }
 
-.card_text{
-    text-overflow: ellipsis;
+.reviews_card:nth-child(4){
+    margin-right: 150px;
 }
 
-.avatar_img_block{
-    margin-bottom: 16px;
+.reviews_card_all{
+    display: flex;
 }
-.card_mark_name{
+
+.reviews_img{
+    position: absolute;
+    width: 100%;   
+}
+
+.reviews_card_img{
+display: flex;
+justify-content: center;
+margin-top: 28px;
+}
+
+.reviews_card_stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
     margin-bottom: 25px;
 }
-.card_mark_name>.author_name{
-    margin-bottom: 9px;
-}
-
-
-
-/* ////////////////// */
-.reviews_btn {
+.reviews_userName{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    margin-top: 16px;
+}
+.reviews_text{
+    display: flex;
+    text-align: center;
+     align-items: center;
+    width: 255px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.reviews_btn_wrapper{
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
-    gap: 8px;
-
-    width: 207px;
+    width: 172px;
     height: 47px;
-
     background: #1EC28B;
-    border-radius: 20px;
-
+    border-radius: 8px;
+    margin:  40px auto 65px;
 }
 
-.reviews_btn_link {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    color: #FFF;
-    letter-spacing: 0.4px;
+.reviews_btn{
     font-family: 'Roboto';
     font-style: normal;
-
-}
-
-/* form */
-
-.form {
-    display: flex;
-    justify-content: center;
-}
-
-.form_title {
-    font-weight: 700;
-    font-size: 37px;
-    width: 573px;
-    height: 70px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
-
-}
-
-.form_elem{
-    display: flex;
-    justify-content: space-around;
-}
-
-form {
-    padding: 30px;
-    background: #F4F8F7;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1),
-        0px 0px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
-.form-field_name_required {
-    margin-bottom: 8px;
-}
-
-.form-field_name {
-    margin-bottom: 8px;
-}
-
-.form-field_name_required::after {
-    content: '*';
-    color: red;
-    margin-left: 5px;
-}
-
-.form-field {
-    margin-bottom: 30px;
-    width: 535px;
-    padding: 8px;
-}
-
-.form_btn {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -601,64 +534,184 @@ form {
     text-align: center;
     letter-spacing: 0.4px;
     color: #FFFFFF;
-    background: #1EC28B;
-    border: none;
+    text-decoration: none;
+   
+}
+/* form */
 
-
+.form{
+    background-color: #1EC28B;
+   
 }
 
-.btn_wrapper {
+.form_all{
+    padding: 35px 209px 35px 150px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
-    width: 204px;
-    height: 47px;
-    background: #1EC28B;
-    border-radius: 20px;
-    margin-left: 165px;
-    margin-bottom: 30px;
+    flex-direction: column;
+    margin-right: 752px;
+    justify-content: space-around;
+}
+.form_tytle{
+    width: 371px;
+height: 56px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+margin-bottom: 20px;
+margin-left: 0;
+}
+.form_text{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+margin-bottom: 8px;
+margin-left: 0;
+}
+.form_field{
+width: 367px;
+height: 40px;
+background: rgba(255, 255, 255, 0.45);
+border-radius: 4px;
+padding-left: 8px;
+border-color:#1EC28B;
+}
+.form_btn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+width: 151px;
+height: 40px;
+background: #FFFFFF;
+border-radius: 8px;
+margin-left: 20px;
+margin-right: 42px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.4px;
+color: #1EC28B;
+border-color: #FFFFFF;
+
+}
+.form_bottom{
+    display: flex;
+}
+.form_field.reg::placeholder {
+  color: red;
+}
+::placeholder { 
+    color: #FFFFFF;
+    opacity: 1;
+}
+.form_img{
+    position: absolute;
+   margin-left: 710px;
+   margin-bottom: 90px;
+ 
+}
+/* footer */
+.top_footer {
+    display: flex;
+    margin-top: 64px;
 }
 
-.form_agreement {
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_title {
+    height: 20px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    height: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 20px 0;
+    color: black;
+}
+
+.footer_line {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer_payCards {
+    display: flex;
+}
+
+.copyright::before {
+    content: "\00A9";
+}
+
+.copyright {
+    font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
     letter-spacing: 0.4px;
-    color: #C5C5C5;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-.form_img {
-
-    background: url(../media/image/Vector.png);
-    background-size: 370px 470px;
-    width: 370px;
-    height: 370px;
-}
-
-.form_img_wrapper {
+.botom_footer {
     display: flex;
-    align-items: center;
-    margin-left: 40px;
-
 }
 
-/* ///////////////// */
+.botom_footer_left {
+    margin-left: 105px;
+}
 
-/* footer */
+.botom_footer_right {
+    margin-right: 150px;
+    margin-top: 53px;
+}
 
-.footer {
-    /* margin: 0px 130px; */
-    /* margin: 0 auto; */
-    margin-left: 127px;
-    margin-right: 75px;
-    margin-top: 40px;
-    margin-bottom: 80px;
+.footer_sites_item {
+    margin-left: 25px;
+}
+
+.footer_sites {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_text {
+    width: 516.64px;
+    height: 80px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.4px;
+    margin-top: 20px;
 }
 
 /* зелёные эконки */
