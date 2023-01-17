@@ -1,19 +1,39 @@
-
-body{
-    margin-top: 30px;
-    max-height: 700px;
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf"),
+        url("../fonts/Roboto/Roboto-Bold.ttf"),
+        url("../fonts/Roboto/Roboto-Black.ttf");
 }
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../fonts/Merriweather/Merriweather-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/Open_sans/OpenSans-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+body {
+    margin-top: 30px;
+    /* max-height: 700px; */
+}
+
 #content {
-    margin: 0px 180px;
-    background: #F4F8F7;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    
+    margin: 0px 12%;
 }
 
 .registerBlocks {
     display: flex;
-    /* justify-content: center; */
+    /* justify-content: spa; */
     /* flex-direction: column; */
 }
 
@@ -22,18 +42,25 @@ body{
     flex-direction: column;
     justify-content: space-between;
 
-    margin: 35px 20px ;
+    margin: 120px 12%;
 }
 
-.registerFildsBlock a{
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.registerFildsBlock a {
     text-decoration: none;
     color: black;
 }
 
 .registerFildsBlock a:first-child {
     margin-right: 20px;
-    text-decoration:underline;
+    text-decoration: underline;
 }
+
 .registerFildsBlock a:last-child {
     color: #8B8B8B;
 }
@@ -43,7 +70,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
 
-    height: 125px;
+    height: 100px;
 
     /* margin-bottom: 30px; */
 }
@@ -70,6 +97,11 @@ body{
     margin-bottom: 0px;
 } */
 
+.registerFilds, .enterFilds{
+    margin-top: 20px;
+}
+
+
 .regField input {
     width: 365px;
     min-width: 265px;
@@ -82,40 +114,42 @@ body{
 }
 
 /* ///////////////// */
-.agreement{
+.agreement {
     margin-bottom: 20px;
 }
 
-.agreement{
+.agreement {
     color: #8B8B8B;
 }
 
-.regButton button{
+.regButton button {
     padding: 8px 16px;
     gap: 8px;
 
     width: 169px;
-    height: 32px;
+    height: 40px;
 
     color: white;
     background: #1EC28B;
-    border-radius: 20px;
+    border-radius: 8px;
 
     border-style: none;
 
     margin-bottom: 30px;
 }
 
-.socialLinksBlock p{
+.socialLinksBlock p {
     color: #8B8B8B;
     margin-right: 25px;
 }
-.socialLinksBlock{
+
+.socialLinksBlock {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.socialLinks .socialLink{
+
+.socialLinks .socialLink {
     display: inline;
     margin-right: 33px;
 }
@@ -123,20 +157,21 @@ body{
 /* Стили для страницы входа */
 
 .enterFildsBlock a:first-child {
-   
+
     color: #8B8B8B;
 }
 
 .enterFildsBlock a:last-child {
-     margin-left: 20px;
-     text-decoration: underline;
+    margin-left: 20px;
+    text-decoration: underline;
 }
+
 .enterFildsBlock a {
     text-decoration: none;
     color: black;
 }
 
-.regFieldText{
+.regFieldText {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -148,11 +183,13 @@ body{
     padding: 8px;
 
 }
-.form-after{
+
+.form-after {
     display: flex;
 
 }
-.form-after-text{
+
+.form-after-text {
     width: 104px;
     height: 24px;
     font-weight: 400;
@@ -171,12 +208,13 @@ body{
 .enterButton button {
     padding: 8px 16px;
 
-   width: 116px;
-   height: 32px;
+    width: 169px;
+    height: 32px;
+
+    border-radius: 8px;
 
     color: white;
     background: #1EC28B;
-    border-radius: 20px;
     border-style: none;
     margin-bottom: 30px;
 
