@@ -17,7 +17,7 @@
 
 
 * {
-    margin: 0;
+    margin: 0px auto;
     box-sizing: border-box;
     font-family: 'Roboto';
     font-style: normal;
@@ -213,7 +213,7 @@
 .card_Header {
     width: 495px;
     height: 180px;
-
+    margin: 0px;
     margin-bottom: 60px;
 
 
@@ -221,6 +221,7 @@
 
 .card_Header>.text_header {
     width: 75%;
+    margin: 0px;
     padding-bottom: 24px;
 }
 
@@ -335,6 +336,7 @@
 .video_Header>.text_p {
     font-size: 20px;
     line-height: 20px;
+    margin: 0px;
 
     /* text-align: justify; */
     /* line-height: 20px; */
@@ -422,121 +424,123 @@
 /* мария */
 
 /* reviews */
-
-*{
-    margin:0 auto;
-    padding: 0;
+.reviews_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px;
+    text-align: center;
+    background: #F4F8F7;
+    margin-bottom: 65px;
 }
-/* reviews */
-h2{
-    width: 183px;
-    height: 20px;
-    font-family: 'Merriweather';
-    font-style: normal;
+.reviews_wrapper > .reviews_btn{
+    align-self: center;
+}
+
+.reviews_title {
+    margin-bottom: 25px;
     font-weight: 700;
     font-size: 37px;
     line-height: 20px;
-    margin-bottom: 30px;
+
 }
 
-.reviews_title_text{
-    width: 343px;
-    height: 40px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 40px;
+.reviews_title_block{
+    margin-left: 127px;
+    text-align: left;
 }
-.reviews_title{
-    margin-right: 850px;
+
+.reviews_text {
+    margin-bottom: 50px;
+    width: 350px;
+    display: flex;
 }
-/* cards */
-.reviews_card{
-    position: relative;
-    width: 270px;
-    height: 347px;
-   
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* карточки */
+.reviews_all{
+    display: flex;
+    flex-direction: row;
+    justify-content: safe center;
+    align-content: center;
+
+    width: 100%;
+
+    padding: 0px 150px;
+
+    margin-bottom: 50px;
+
+
+    background-image: url("../media/image/rewiewsbackground.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+.rewiews_card{
+    
+    background-color: white;
     border-radius: 10px;
-    margin-top: 165px;
-    z-index: auto;
+
+    padding: 28px 8px;
     margin-right: 20px;
-}
-.reviews_card:first-child{
-    margin-left: 150px;
+    margin-top: 20.5vh;
+
+    width: 270px;
+    max-height: 360px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    overflow: hidden;
 }
 
-.reviews_card:nth-child(4){
-    margin-right: 150px;
+.card_text{
+    text-overflow: ellipsis;
 }
 
-.reviews_card_all{
-    display: flex;
+.avatar_img_block{
+    margin-bottom: 16px;
 }
-
-.reviews_img{
-    position: absolute;
-    width: 100%;   
-}
-
-.reviews_card_img{
-display: flex;
-justify-content: center;
-margin-top: 28px;
-}
-
-.reviews_card_stars {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.card_mark_name{
     margin-bottom: 25px;
 }
-.reviews_userName{
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
+.card_mark_name>.author_name{
+    margin-bottom: 9px;
 }
-.reviews_text{
+
+
+
+/* ////////////////// */
+.reviews_btn {
     display: flex;
-    text-align: center;
-     align-items: center;
-    width: 255px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-}
-.reviews_btn_wrapper{
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
-    width: 172px;
+    gap: 8px;
+
+    width: 207px;
     height: 47px;
+
     background: #1EC28B;
-    border-radius: 8px;
-    margin:  40px auto 65px;
+    border-radius: 20px;
+
 }
 
-.reviews_btn{
-    font-family: 'Roboto';
-    font-style: normal;
+.reviews_btn_link {
+    text-decoration: none;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    color: #FFF;
     letter-spacing: 0.4px;
-    color: #FFFFFF;
-    text-decoration: none;
-   
+    font-family: 'Roboto';
+    font-style: normal;
+
 }
+
 /* form */
 
 .form{
@@ -576,7 +580,7 @@ margin-bottom: 8px;
 margin-left: 0;
 }
 .form_field{
-width: 367px;
+width: 40em;
 height: 40px;
 background: rgba(255, 255, 255, 0.45);
 border-radius: 4px;
