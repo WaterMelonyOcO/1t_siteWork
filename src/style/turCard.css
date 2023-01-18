@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf"),
+        url("../fonts/Roboto/Roboto-Bold.ttf"),
+        url("../fonts/Roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../fonts/Merriweather/Merriweather-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/Open_sans/OpenSans-Regular.ttf");
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather';
+    font-style: normal;
+}
+
+#move_info_block {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 85px;
+
+    height: 100em;
+}
+
+.content {
+    padding-left: 28em;
+    padding-right: 20px;
+
+    height: 500px;
+}
+
+.info_block {
+    /* width: 500px; */
+    padding-top: 18em;
+    width: calc((100%) / 3);
+    transition: 0.5s ease-in-out;
+}
+
+.background_img {
+    background-size: 180em;
+    background-repeat: no-repeat;
+}
+
+.ib1 {
+    background-image: url("../media/image/crabe.jpg");
+}
+
+.ib2 {
+    background-image: url("../media/image/duck.jpg");
+}
+
+.ib3 {
+    background-image: url("../media/image/pep.jpg");
+    background-position: 40%;
+}
+
+/* блок всего текста */
+.block_inform {
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+
+    /* height: 500px; */
+}
+
+.info_block:hover .block_inform {
+    visibility: visible;
+
+}
+
+.info_block:hover {
+    width: calc((100% + 50%) / 3);
+}
+
+
+
+/* текст */
+.title_head {
+    font-size: 24px;
+
+    margin-bottom: 2em;
+}
+
+.info_particl>p {
+
+    font-family: 'Open Sans';
+
+    font-size: 20px;
+}
+
+/* номер "фишки" */
+
+.numb {
+    color: white;
+    font-size: 60px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    line-height: 20px;
+
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: calc(80% - 10%);
+    top: 50%;
+
+    background: #1EC28B;
+    border-radius: 50%;
+
+    text-align: center;
+    padding-top: 1em;
+}
+
+
+/* о самом туре и его авторе */
+
+.tour_info{
+    display: flex;
+    justify-content: space-between  ;
+
+
+    font-size: 22px;
+}
+
+.description_author{
+    width: 560px;
+    font-size: 18px;
+}
+
+.about_guid{
+    width: 680px;
+}
+
+.guid_info{
+    display: inline-block;
+    width: 100%;
+}
+
+.authod{
+    display: inline;
+    margin-right: 105px;
+}
+
+.authod>p{
+    display: inline;
+    font-weight: 600;
+}
+.authod>p:last-child{
+    margin-left: 46px;
+    font-weight: 700;
+}
+
+.valid_authtor{
+    display: inline;
+}
+.valid_authtor>div{
+    display: inline-block;
+}

@@ -13,7 +13,7 @@
       <div class="header-base">
           <img src="./src/media/image/logo.png" alt="логотип" class="logo">
           <div class="navigation-menu">
-              <a href="#" class="navigation-page">Кто мы</a>
+              <a href="./src/pages/about_us.html" class="navigation-page">Кто мы</a>
               <a href="#" class="navigation-page">Наши авторы</a>
               <a href="#" class="navigation-page">В путешествие</a>
           </div>
@@ -267,156 +267,68 @@
     </section>
     <section class="form">
       <div class="form_all">
-        <h2 class="form_title">
-          Мы поможем выбрать тури организуем ваше путешествие
-        </h2>
-        <div class="form_elem">
-          <form>
-            <div class="form-name">
-              <h3 class="form-field_name_required">Имя</h3>
-              <div>
-                <input
-                  class="form-field"
-                  name="user"
-                  required
-                  type="text"
-                  placeholder="Your Name"
-                  tabindex="1"
-                />
-              </div>
-            </div>
-            <div class="form-name_">
-              <h3 class="form-field_name_required">Телефон</h3>
-              <div>
-                <input
-                  class="form-field"
-                  name="user"
-                  required
-                  type="tel"
-                  placeholder="+7 (000) 000 00 00"
-                  tabindex="2"
-                />
-              </div>
-            </div>
-            <div class="form-name">
-              <h3 class="form-field_name">Почта</h3>
-              <div>
-                <input
-                  class="form-field"
-                  name="E-mail"
-                  type="email"
-                  placeholder="Your E-mail"
-                  tabindex="3"
-                />
-              </div>
-            </div>
-            <div>
-              <div class="btn_wrapper">
-                <button class="form_btn" type="submit">ОТПРАВИТЬ</button>
-              </div>
-              <p class="form_agreement">
-                Нажимая отправить, Вы соглашаетесь с Условиями и Правилами
-                компании.
-              </p>
-            </div>
-          </form>
-          <div class="form_img_wrapper">
-            <img
-              class="form_img"
-              src="./src/media/image/man_and_woman_with_map.png"
-              alt="man and woman with map"
-            />
+          <h3 class="form_tytle">Мы поможем выбрать тур
+              и организуем ваше путешествие</h3>
+          <p class="form_text">Телефон</p>
+          <div class="form_bottom">
+              <input class="form_field" type="tel" required placeholder="+7 (000) 000 00 00">
+              <button class="form_btn" type="submit">ОТПРАВИТЬ</button>
           </div>
-        </div>
+          <div class="form_img"><img src="./img/mountain.png" alt=" рисунок гора"></div>
+
       </div>
+  </section>
+  <footer>
+    <section class="top_footer">
+        <div class="footer_column">
+            <h3 class="footer_title">О нас</h3>
+            <a href="./about_us.html">Кто мы</a>
+            <a href="#">Наши авторы</a>
+            <a href="#">Наша команда</a>
+            <a href="#">Партнеры</a>
+        </div>
+        <div class="footer_column">
+            <h3 class="footer_title">Помощь</h3>
+            <a href="№">Стать автором</a>
+            <a href="#">Выбрать путешествие</a>
+            <a href="#">Центр поддержки</a>
+            <a href="#">Программа лояльности</a>
+            <a href="#">Возврат</a>
+        </div>
+        <div class="footer_column">
+            <h3 class="footer_title">Контакты</h3>
+            <a href="#">+7 (000) 000 00 00</a>
+            <a href="#">russia@tourism.ru</a>
+        </div>
+        <div class="footer_column">
+            <h3 class="footer_title">Приложения для вас</h3>
+            <a href="#"><img src="./img/footer/googleplay.png" alt="иконка googleplay"></a>
+            <a href="#"><img src="./img/footer/appstore.png" alt="иконка appstore"></a>
+        </div>
     </section>
-    <footer class="footer">
-      <div class="connectLinks">
-        <div class="linkBlock phone">
-          <img src="./src/media/image/phonIcon.png" />
-          <p>+7 (000) 000 00 00</p>
-        </div>
-        <div class="linkBlock email">
-          <img src="./src/media/image/mailIcon.png" />
-          <p>russia@tourism.ru</p>
-        </div>
-        <div class="linkBlock map">
-          <img src="./src/media/image/mapIcon.png" />
-          <a href="">Мы здесь</a>
-        </div>
-      </div>
-      <hr class="upperHr" />
-      <div class="infoBlocks">
-        <div class="infoBlock AboutUs">
-          <h4 class="InfoHeader">О нас</h4>
-          <a href="" class="InfoLink">Кто мы</a>
-          <a href="" class="InfoLink">Наши авторы</a>
-          <a href="" class="InfoLink">Наша команда</a>
-          <a href="" class="InfoLink">Партнёры</a>
-        </div>
-        <div class="infoBlock Help">
-          <h4 class="InfoHeader">Помощь</h4>
-          <a href="" class="InfoLink">Стать автором </a>
-          <a href="" class="InfoLink">Выбрать путешествие</a>
-          <a href="" class="InfoLink">Центр поддержки </a>
-          <a href="" class="InfoLink">Программа лояльности</a>
-          <a href="" class="InfoLink">Возврат</a>
-        </div>
-        <div class="infoBlock Paymant">
-          <h4 class="InfoHeader">Способы оплаты</h4>
-          <div class="paymentIcon">
-            <img src="./src/media/image/visaIcon.png" />
-          </div>
-          <div class="paymentIcon">
-            <img src="./src/media/image/mirIcon.png" />
-          </div>
-          <div class="paymentIcon">
-            <img src="./src/media/image/masterIcon.png" />
-          </div>
-        </div>
-        <div class="infoBlock AppsBlock">
-          <h4 class="InfoHeader">Приложения для вас</h4>
-          <div class="AppsSub">
-            <div class="google Apps">
-              <img src="./src/media/image/googleIcon.png" />
-              <p>Загрузите в <span class="bolt">Google Play</span></p>
+    <div class="footer_line"></div>
+    <section class="botom_footer">
+        <div class="botom_footer_left">
+            <div class="footer_payCards">
+                <a href="#"><img class="footer_payCards_item" src="./img/footer/visa.png" alt="карта виза"></a>
+                <a href="#"><img class="footer_payCards_item" src="./img/footer/mir.png" alt="карта мир"></a>
+                <a href="#"><img class="footer_payCards_item" src="./img/footer/mastercard.png"
+                        alt="карта мастеркард"></a>
             </div>
-            <div class="appStore Apps">
-              <img src="./src/media/image/appStoreIcon.png" />
-              <p>Загрузите в <span class="bolt">App store</span></p>
+            <p class="copyright">Неизведанная Россиия –2022</p>
+        </div>
+        <div class="botom_footer_right">
+            <div class="footer_sites">
+                <a href="#"><img class="footer_sites_item" src="./img/footer/vk.png" alt="иконка вк"></a>
+                <a href="#"><img class="footer_sites_item" src="./img/footer/youtube.png" alt="иконка ютуба"></a>
+                <a href="#"><img class="footer_sites_item" src="./img/footer/telegram 1.png" alt="иконка телеграма"></a>
+
             </div>
-          </div>
+            <p class="footer_text">Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и
+                других пользовательских
+                данных, в соответствии с Политикой конфиденциальности и пользовательским соглашением</p>
         </div>
-      </div>
-      <hr class="DownHr" />
-      <div class="ElseInfoBlock">
-        <div class="IconLinks">
-          <div class="IconLink VkIcon">
-            <img src="./src/media/image/vkIcon.png" />
-          </div>
-          <div class="IconLink">
-            <img src="./src/media/image/youtubeIcon.ico" />
-          </div>
-          <div class="IconLink">
-            <img src="./src/media/image/telegramIcon.ico" />
-          </div>
-        </div>
-        <div class="ElseInfo">
-          <div class="CopyriteBlock">
-            <div class="Copyrite">
-              <img src="./src/media/image/copyrightIcon.ico" />
-            </div>
-            <div class="CopiriteText"><p>Неизведанная Россиия - 2022</p></div>
-          </div>
-          <div class="Agreement">
-            <p>
-              Продолжая использовать наш сайт, вы даете согласие на обработку
-              файлов Cookies и других пользовательских данных, в соответствии с
-              Политикой конфиденциальности и пользовательским соглашением
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </section>
+</footer>
   </body>
 </html>

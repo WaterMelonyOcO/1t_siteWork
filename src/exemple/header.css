@@ -1,0 +1,161 @@
+.section-one{
+    display:block;
+    margin: 0px auto;
+    width: 920px;
+    /* height: 385px; */
+    margin-bottom: 20px;
+ }
+
+ .head-whywe{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 20px;
+ }
+
+ .lists-whywe{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+ }
+
+.list-whywe-element{
+    display: flex;
+    width: 200px;
+    height: 70px;
+    align-items: center; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.banner{
+    background-image: url(../media/image/picture_banner.png);
+    background-size: 100%;
+    position: relative;
+    bottom:100px;
+    /* max-width: 1440px; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 715px;
+    background-repeat: no-repeat;
+    z-index: -5;
+}
+
+.choose{
+    position: relative;
+    bottom: 150px;
+    left:30em;
+    /* left: 250px;
+    width: 946px;
+    height: 100px; */
+    /*background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;*/
+}
+
+.list-two{
+    position: relative;
+    left: 100px;
+}
+
+.why-we-img{
+    position: relative;
+    right: 100px;
+    top: 80px;
+}
+/* Дальше идут стили для хидера(навигации)
+*/
+.header-base{
+    max-width: 1400px;
+    height: 83px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 10;
+}
+
+.logo{
+    width: 74px;
+    height: 45px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.navigation-button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.navigation-page{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+
+    color: #000000;
+
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.search-area{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 7px;
+    gap: 182px;
+
+    width: 264px;
+    height: 24px;
+
+    border: 1px solid #000000;
+    border-radius: 20px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    background-color: rgba(0,0,0,0);
+}
+
+.search-button{
+    position: relative;
+    left: -25px;
+}
+
+.number::before{
+    content: url("../media/image/phone_header.png");
+    position: relative;
+    right: 10px;
+    top: 4px;
+}
+
+.navigation-form{
+    display: flex;
+    flex-direction: row-reverse;
+
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
