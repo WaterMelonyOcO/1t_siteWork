@@ -22,13 +22,11 @@
     font-style: normal;
 }
 
-body {
-    margin-top: 30px;
-    /* max-height: 700px; */
-}
 
 #content {
     margin: 0px 12%;
+    background-color: #F4F8F7;
+    border-radius: 20px;
 }
 
 .registerBlocks {
@@ -45,7 +43,7 @@ body {
     margin: 120px 12%;
 }
 
-a{
+#content a{
     color: white;
     text-decoration: none;
 }

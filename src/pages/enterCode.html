@@ -5,12 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style/registerPageStyle.css" />
-    <link rel="stylesheet" href="../style/header.css" />
     <link rel="stylesheet" href="../style/registerBlank.css" />
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
   </head>
 
   <body>
+    <header id="header">
+      <!-- логотип -->
+      <div class="headerElements">
+        <dev class="headerElement logoImg">
+          <img src="../media/image/logo.svg" />
+        </dev>
+      </div>
+      <!-- пункты "наши туры" и т.д -->
+      <div class="headerElements turLinks">
+        <ul>
+          <li class="headerElement turLink">
+            <a class="turParticle">Кто мы</a>
+          </li>
+          <li class="headerElement turLink">
+            <a class="turParticle">Наши туры</a>
+          </li>
+          <li class="headerElement turLink">
+            <a class="turParticle">В путишествие</a>
+          </li>
+        </ul>
+      </div>
+      <!-- поиск -->
+      <div class="headerElements">
+        <dev class="headerElement serchFormBlock">
+          <form class="serchForm form" action="" method="get">
+            <input name="serch" placeholder="поиск" type="search" />
+            <button type="submit">
+              <img src="../media/image/search.png" alt="" />
+            </button>
+          </form>
+        </dev>
+      </div>
+      <!-- телефон и язык -->
+      <div class="headerElements PhoneLangBlock">
+        <dev class="headerElement PhoneBlock">
+          <img class="phoneImg" src="../media/image/PhoneImg.png" />
+          <p class="phoneNumber">+7499374389</p>
+        </dev>
+        <dev class="headerElement LangBlock">
+          <img class="langImg" src="../media/image/globe.png" />
+        </dev>
+      </div>
+    </header>
     <section id="content">
       <div class="registerBlocks">
         <div class="Image">
@@ -75,5 +118,95 @@
         </div>
       </div>
     </section>
+    <footer>
+      <section class="top_footer">
+        <div class="footer_column">
+          <h3 class="footer_title">О нас</h3>
+          <a href="./about_us.html">Кто мы</a>
+          <a href="#">Наши авторы</a>
+          <a href="#">Наша команда</a>
+          <a href="#">Партнеры</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Помощь</h3>
+          <a href="№">Стать автором</a>
+          <a href="#">Выбрать путешествие</a>
+          <a href="#">Центр поддержки</a>
+          <a href="#">Программа лояльности</a>
+          <a href="#">Возврат</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Контакты</h3>
+          <a href="#">+7 (000) 000 00 00</a>
+          <a href="#">russia@tourism.ru</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Приложения для вас</h3>
+          <a href="#"
+            ><img
+              src="../media/image/footer/googleplay.png"
+              alt="иконка googleplay"
+          /></a>
+          <a href="#"
+            ><img
+              src="../media/image/footer/appstore.png"
+              alt="иконка appstore"
+          /></a>
+        </div>
+      </section>
+      <div class="footer_line"></div>
+      <section class="botom_footer">
+        <div class="botom_footer_left">
+          <div class="footer_payCards">
+            <a href="#"
+              ><img
+                class="footer_payCards_item"
+                src="../media/image/footer/visa.png"
+                alt="карта виза"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer_payCards_item"
+                src="../media/image/footer/mir.png"
+                alt="карта мир"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer_payCards_item"
+                src="../media/image/footer/mastercard.png"
+                alt="карта мастеркард"
+            /></a>
+          </div>
+          <p class="copyright">Неизведанная Россиия –2022</p>
+        </div>
+        <div class="botom_footer_right">
+          <div class="footer_sites">
+            <a href="#"
+              ><img
+                class="footer_sites_item"
+                src="../media/image/footer/vk.png"
+                alt="иконка вк"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer_sites_item"
+                src="../media/image/footer/youtube.png"
+                alt="иконка ютуба"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer_sites_item"
+                src="../media/image/footer/telegram 1.png"
+                alt="иконка телеграма"
+            /></a>
+          </div>
+          <p class="footer_text">
+            Продолжая использовать наш сайт, вы даете согласие на обработку
+            файлов Cookies и других пользовательских данных, в соответствии с
+            Политикой конфиденциальности и пользовательским соглашением
+          </p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

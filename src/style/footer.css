@@ -1,0 +1,81 @@
+/* footer */
+footer *{
+    margin: 0px auto;
+}
+.top_footer{
+    display: flex;
+    margin-top: 110px;
+}
+.footer_column{
+    display: flex;
+    flex-direction: column;
+}
+.footer_title{
+    height: 20px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    height: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 20px 0;
+    color: black;
+}
+.footer_line{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.footer_payCards{
+    display: flex;
+}
+.copyright::before{
+content: "\00A9";
+}
+.copyright{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.botom_footer{
+    display: flex;
+}
+.botom_footer_left{
+    margin-left: 105px;
+}
+.botom_footer_right{
+    margin-right: 150px;
+    margin-top: 53px;
+}
+.footer_sites_item{
+    margin-left: 25px;
+}
+.footer_sites{
+display: flex;
+justify-content: flex-end;
+}
+.footer_text{
+    width: 516.64px;
+    height: 80px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.4px;
+    margin-top: 20px;
+}

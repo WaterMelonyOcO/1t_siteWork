@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/curLocTur.css" />
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <title>Путишествие по России</title>
+  </head>
+  <body>
+    <header id="header">
+      <!-- логотип -->
+      <div class="headerElements">
+        <a href="../../index.html" class="headerElement logoImg">
+          <img src="../media/image/logo.png" />
+        </a>
+      </div>
+      <!-- пункты "наши туры" и т.д -->
+      <div class="headerElements turLinks">
+        <ul>
+            <li class="headerElement turLink">
+                <a class="turParticle" href="./about_us.html">Кто мы</a>
+            </li>
+            <li class="headerElement turLink">
+                <a class="turParticle" href="#">Наши авторы</a>
+            </li>
+            <li class="headerElement turLink">
+                <a class="turParticle" href="#">В путишествие</a>
+            </li>
+        </ul>
+      </div>
+      <!-- поиск -->
+      <div class="headerElements">
+        <dev class="headerElement serchFormBlock">
+          <form class="serchForm form" action="" method="get">
+            <input name="serch" placeholder="поиск" type="search" />
+            <button type="submit">
+              <img src="../media/image/search.png" alt="" />
+            </button>
+          </form>
+        </dev>
+      </div>
+      <!-- телефон и язык -->
+      <div class="headerElements PhoneLangBlock">
+        <dev class="headerElement PhoneBlock">
+          <img class="phoneImg" src="../media/image/PhoneImg.png" />
+          <p class="phoneNumber">+7499374389</p>
+        </dev>
+        <dev class="headerElement LangBlock">
+          <img class="langImg" src="../media/image/globe.png" />
+        </dev>
+      </div>
+    </header>
+    <div class="container">
+      <div class="wrapper">
+        <h1 class="main-title">Каталог туров</h1>
+        <div class="subtitle-cnt">
+          <p class="main-subtitle" id="tourFind">найдено 0 туров</p>
+          <div class="card-sorting">
+            <p class="sort">Сортировать по:</p>
+            <a class="famous-link" href="#" id="sortByPopular">Популярности</a>
+            <a class="rating-link" href="#" id="sortByRating">Рейтингу</a>
+            <a class="price-link" href="#" id="sortByPrice">Цене</a>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <!--ЛОКАЦИЯ-->
+          <div class="tour-filter">
+            <div class="filter-item">
+              <h2 class="tour_location">Локация</h2>
+              <img
+                src="../media/image/Vector.svg"
+                alt="vector"
+                class="tour-img"
+              />
+            </div>
+            <label class="checkbox-container">
+              Алтай
+              <input
+                type="checkbox"
+                id="altayCheckbox"
+                value="altay"
+                name="check"
+              />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Архыз
+              <input
+                type="checkbox"
+                id="arhizCheckbox"
+                value="arhiz"
+                name="check"
+              />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Байкал
+              <input
+                type="checkbox"
+                checked
+                id="baikalCheckbox"
+                value="baikal"
+                name="check"
+              />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Дагестан
+              <input
+                type="checkbox"
+                id="dagestanCheckbox"
+                value="dagestan"
+                name="check"
+              />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Калининград
+              <input
+                type="checkbox"
+                id="kaliningradCheckbox"
+                value="kaliningrad"
+                name="check"
+              />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container last">
+              Карелия
+              <input
+                type="checkbox"
+                id="kareliyaCheckbox"
+                value="kareliya"
+                name="check"
+              />
+              <span class="checkmark"></span>
+            </label>
+
+            <!--КАТЕГОРИИ-->
+            <div class="filter-item">
+              <h2 class="tour_location">Категория</h2>
+              <img
+                src="../media/image/Vector.svg"
+                alt="vector"
+                class="tour-img"
+              />
+            </div>
+            <label class="checkbox-container">
+              Индивидуальные туры
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container last">
+              Групповые туры
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+
+            <!--Уровень-->
+            <div class="filter-item">
+              <h2 class="tour_location">Уровень</h2>
+              <img
+                src="../media/image/Vector.svg"
+                alt="vector"
+                class="tour-img"
+              />
+            </div>
+            <label class="checkbox-container">
+              Базовый
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Средний
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container last">
+              Сложный
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+
+            <!--ЦЕНА-->
+            <div class="range-controls">
+              <p class="rage_name-price">Цена</p>
+              <p class="rage_price" id="price_label">150 000 Р</p>
+            </div>
+            <input
+              id="priceRange"
+              type="range"
+              min="0"
+              max="150000"
+              value="150000"
+            />
+
+            <!--ПРОДОЛЖИТЕЛЬНОСТЬ-->
+            <div class="range-controls">
+              <p class="rage_duration">Продолжительность</p>
+              <p class="rage_days" id="days_label">10 дней</p>
+            </div>
+            <input type="range" id="daysRange" min="1" max="15" value="15" />
+
+            <!--ПРОЖИВАНИЕ-->
+            <div class="filter-item">
+              <h2 class="tour_location">Проживание</h2>
+              <img
+                src="../media/image/Vector.svg"
+                alt="vector"
+                class="tour-img"
+              />
+            </div>
+            <label class="checkbox-container">
+              Палатка
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Гостиница
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Квартира
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Турбаза
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Гостевой дом
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Без проживания
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="cards-block" id="card-blocks"></div>
+        </div>
+        <div class="pages">
+          <button class="start-btn">В начало</button>
+          <a href="#" class="pages-number1">1</a>
+          <a href="#" class="pages-number2">2</a>
+          <a href="#" class="pages-number3">3</a>
+          <a href="#" class="pages-number">...</a>
+          <a href="#" class="pages-number4">14</a>
+          <a href="#" class="pages-number5">15</a>
+          <button class="finish-btn">Дальше</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <section class="top_footer">
+        <div class="footer_column">
+          <h3 class="footer_title">О нас</h3>
+          <a href="../pages/about_us.html">Кто мы</a>
+          <a href="#">Наши авторы</a>
+          <a href="../pages/about_us.html#team">Наша команда</a>
+          <a href="#">Партнеры</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Помощь</h3>
+          <a href="../pages/registerPage.html">Стать автором</a>
+          <a href="#">Выбрать путешествие</a>
+          <a href="#">Центр поддержки</a>
+          <a href="#">Программа лояльности</a>
+          <a href="#">Возврат</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Контакты</h3>
+          <a href="#">+7 (000) 000 00 00</a>
+          <a href="#">russia@tourism.ru</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Приложения для вас</h3>
+          <a href="#"
+            ><img
+              src="../media/image/footer/googleplay.png"
+              alt="иконка googleplay"
+          /></a>
+          <a href="#"
+            ><img
+              src="../media/image/footer/appstore.png"
+              alt="иконка appstore"
+          /></a>
+        </div>
+      </section>
+      <div class="footer_line"></div>
+      <section class="botom_footer">
+        <div class="botom_footer_left">
+          <div class="footer_payCards">
+            <a href="#"
+              ><img
+                class="footer_payCards_item"
+                src="../media/image/footer/visa.png"
+                alt="карта виза"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer_payCards_item"
+                src="../media/image/footer/mir.png"
+                alt="карта мир"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer_payCards_item"
+                src="../media/image/footer/mastercard.png"
+                alt="карта мастеркард"
+            /></a>
+          </div>
+          <p class="copyright">Неизведанная Россиия –2022</p>
+        </div>
+        <div class="botom_footer_right">
+          <div class="footer_sites">
+            <a href="#"
+              ><img
+                class="footer_sites_item"
+                src="../media/image/footer/vk.png"
+                alt="иконка вк"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer_sites_item"
+                src="../media/image/footer/youtube.png"
+                alt="иконка ютуба"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer_sites_item"
+                src="../media/image/footer/telegram 1.png"
+                alt="иконка телеграма"
+            /></a>
+          </div>
+          <p class="footer_text">
+            Продолжая использовать наш сайт, вы даете согласие на обработку
+            файлов Cookies и других пользовательских данных, в соответствии с
+            Политикой конфиденциальности и пользовательским соглашением
+          </p>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="../scripts/curLoc.js"></script>
+</html>
