@@ -34,7 +34,7 @@
 
 header {
     height: 700px;
-    margin-bottom: 150px;
+    margin-bottom: -50px;
     width: 100%;
     background-image: url(../media/image/picture_banner.png);
     background-size: 100%;
@@ -74,15 +74,8 @@ header {
 
 
 .choose {
-    position: absolute;
-    bottom: 150px;
-    left: 30em;
-    /* left: 250px;
-    width: 946px;
-    height: 100px; */
-    /*background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;*/
+    margin-bottom: 120px;
+    display: block;
 }
 
 .list-two {
@@ -119,7 +112,8 @@ header {
 }
 
 .main_text {
-    background-image: linear-gradient(180deg, #000000 -54.41%, rgba(0, 0, 0, 0) 244.12%);
+    color: rgba(29, 29, 29, 0.814);
+    background-image: linear-gradient(180deg, #000000 -54.41%, rgba(0, 0, 0, 0) 244.12%); 
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
