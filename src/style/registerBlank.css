@@ -217,3 +217,7 @@
     margin-bottom: 30px;
 
 }
+
+.errorInput {
+    box-shadow: 0px 0px 6px 4px rgb(225 43 43 / 20%);
+}

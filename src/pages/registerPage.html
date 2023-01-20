@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <!-- <link rel="stylesheet" href="../style/registerPageStyle.css" /> -->
     <link rel="stylesheet" href="../style/registerBlank.css" />
@@ -57,74 +57,84 @@
     <section id="content">
       <div class="registerBlocks">
         <div class="Image">
-          <img src="../media/image/picture_welcome.png" />
+            <img src="../media/image/picture_welcome.png"/>
         </div>
         <div class="registerFildsBlockSub">
-          <div class="wellcomeField">
-            <div class="wellcomeText">
-              <h3 class="headText">Мы вас ждали!</h3>
-              <p>Регистрация вашего аккаунта</p>
+            <div class="wellcomeField">
+                <div class="wellcomeText">
+                    <h3 class="headText">Мы вас ждали!</h3>
+                    <p>Регистрация вашего аккаунта</p>
+                </div>
             </div>
-          </div>
-          <div class="registerForm">
-            <form class="regForm">
-              <div class="regField">
-                <p>Имя</p>
-                <input
-                  type="text"
-                  placeholder="Александр"
-                  tabindex="1"
-                  required
-                />
-              </div>
-              <div class="regField">
-                <p>Телефон</p>
-                <input
-                  type="tel"
-                  placeholder="+70000000"
-                  tabindex="2"
-                  required
-                  pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="regButton"><button><a href="registerPageCode.html">получить SMS</a></button></div>
-          <div class="socialLinksBlock">
-            <p>Создать аккаунт с помощью</p>
-            <div class="socialLinks">
-              <div class="socialLink">
-                <a href="#"
-                  ><img src="../media/image/social1.svg" alt="логотип гугл"
-                /></a>
-              </div>
-              <div class="socialLink">
-                <a href="#"
-                  ><img src="../media/image/social2.svg" alt="логотип гугл"
-                /></a>
-              </div>
-              <div class="socialLink">
-                <a href="#"
-                  ><img
-                    src="../media/image/social3.svg"
-                    alt="логотип одноклассники"
-                /></a>
-              </div>
-              <div class="socialLink">
-                <a href="#"
-                  ><img
-                    src="../media/image/social4.svg"
-                    alt="логотип в контакте"
-                /></a>
-              </div>
+            <div class="registerForm">
+                <form class="regForm" id="nameTelephone" action="registerPageCode.html">
+                    <div class="regField">
+                        <p>
+                          <label for="name">Имя</label>
+                        </p>
+                        <input  class="firstForm"
+                                type="text"
+                                placeholder="Александр"
+                                tabindex="1"
+                                name="name"
+                                id="name"
+                        />
+                    </div>
+                    <div class="regField">
+                        <p>
+                          <label for="tel">Телефон</label>
+                        </p>
+                        <input
+                                class="firstForm"
+                                type="tel"
+                                placeholder="+70000000"
+                                tabindex="2"
+                                pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                                name="tel"
+                                id="tel"
+                        />
+                    </div>
+                    <div class="regButton">
+                        <button type="submit" id="submitBtnFirstForm">получить SMS</button>
+                    </div>
+                </form>
             </div>
-          </div>
-          <div class="registerFilds">
-            <div class="registerFildsBlock">
-              <a href="#">Регистрация</a>
-              <a href="./enter.html">Вход</a>
+
+            <div class="socialLinksBlock">
+                <p>Создать аккаунт с помощью</p>
+                <div class="socialLinks">
+                    <div class="socialLink">
+                        <a href="#"
+                        ><img src="../media/image/social1.svg" alt="логотип гугл"
+                        /></a>
+                    </div>
+                    <div class="socialLink">
+                        <a href="#"
+                        ><img src="../media/image/social2.svg" alt="логотип гугл"
+                        /></a>
+                    </div>
+                    <div class="socialLink">
+                        <a href="#"
+                        ><img
+                                src="../media/image/social3.svg"
+                                alt="логотип одноклассники"
+                        /></a>
+                    </div>
+                    <div class="socialLink">
+                        <a href="#"
+                        ><img
+                                src="../media/image/social4.svg"
+                                alt="логотип в контакте"
+                        /></a>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="registerFilds">
+                <div class="registerFildsBlock">
+                    <a href="#">Регистрация</a>
+                    <a href="./enter.html">Вход</a>
+                </div>
+            </div>
         </div>
       </div>
     </section>
@@ -183,4 +193,5 @@
       </section>
   </footer>
   </body>
+  <script src="../scripts/validate.js"></script>
 </html>
