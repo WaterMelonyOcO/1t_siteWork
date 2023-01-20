@@ -10,8 +10,6 @@ function checkSms(sms) {
     re.test( String(sms) )
 }
 
-
-
 smsForm.onsubmit = function () {
     smsInputValue = smsInput.value
 
@@ -25,12 +23,10 @@ smsForm.onsubmit = function () {
         console.log('access')
     }
     if (checkSms(smsInputValue)) {
-        debugger
         smsInput.classList.add('errorInput')
         return false
     }
     else {
-        debugger
         smsInput.classList.remove('errorInput')
     }
 }
