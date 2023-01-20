@@ -348,7 +348,7 @@ input[type=range]:focus::-ms-fill-upper {
 .card {
   width: 270px;
   height: 530px;
-  margin-bottom: 35px;
+  margin-bottom: 100px;
 }
 
 .card_img {
