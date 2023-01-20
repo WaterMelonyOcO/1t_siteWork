@@ -62,13 +62,13 @@ header {
 
 .list-whywe-element {
     display: flex;
-    width: 270px;
+    width: 380px;
     height: 70px;
     align-items: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 20px;
 }
 
@@ -87,6 +87,7 @@ header {
     position: relative;
     right: 100px;
     top: 80px;
+    width: 80px;
 }
 
 /* Дальше идут стили для хидера(навигации)
@@ -112,15 +113,28 @@ header {
 }
 
 .main_text {
-    color: rgba(29, 29, 29, 0.814);
-    background-image: linear-gradient(180deg, #000000 -54.41%, rgba(0, 0, 0, 0) 244.12%); 
-    background-clip: text;
+    /* color: rgba(29, 29, 29, 0.814); */
+    background: linear-gradient(180deg, #000000 -54.41%, rgba(0, 0, 0, 0) 244.12%);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
     font-family: 'Merriweather';
     font-style: normal;
     margin-bottom: 48px;
 }
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .main_text {
+        color: rgba(29, 29, 29, 0.814);
+        font-size: 40px;
+        font-family: 'Merriweather';
+        font-style: normal;
+        margin-bottom: 48px;
+    }
+}
+
+
 
 .sub_text {
     color: #444444;
@@ -186,6 +200,10 @@ header {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.search-area::placeholder{
+    color:#808080;
+}
+
 .search-button {
     position: relative;
     left: -25px;
@@ -213,6 +231,7 @@ header {
     margin-bottom: 35px;
     padding: 20px 0px;
     background: #F4F8F7;
+    overflow: hidden;
 }
 
 .sub_Card {
@@ -326,13 +345,13 @@ header {
     background-repeat: no-repeat;
 }
 
-#Kaliningrad{
+#Kaliningrad {
     background-image: url('../media/image/kalinigrad.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-#Arhis{
+#Arhis {
     background-image: url('../media/image/arhis.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -422,6 +441,7 @@ header {
     margin-top: 50px;
     margin-bottom: 40px;
     width: 100%;
+    overflow: hidden;
 }
 
 .video_prev_block_sub {
@@ -522,11 +542,12 @@ header {
 }
 
 .reviews_title_block {
-    margin-left: 390px;
     text-align: left;
+    width: 1150px;
 }
 
 .reviews_text {
+    margin: 0px;
     margin-bottom: 50px;
     width: 350px;
     display: flex;
@@ -659,13 +680,15 @@ header {
 }
 
 .form_field {
-    width: 40em;
-    height: 40px;
+    width: 41em;
+    height: 48px;
     background: rgba(255, 255, 255, 0.45);
     border-radius: 4px;
     padding-left: 8px;
     border-color: #1EC28B;
     margin: 0px;
+    box-shadow: none;
+    border: none;
 }
 
 .form_btn {
@@ -688,7 +711,9 @@ header {
     line-height: 24px;
     letter-spacing: 0.4px;
     color: #1EC28B;
-    border-color: #FFFFFF;
+
+    box-shadow: none;
+    border: none;
 
 }
 
@@ -697,8 +722,8 @@ header {
     margin: 0px;
 }
 
-.form_field.reg::placeholder {
-    color: red;
+.form_field::placeholder {
+    font-size: 18px;
 }
 
 ::placeholder {
@@ -708,7 +733,7 @@ header {
 
 .form_img {
     position: absolute;
-    margin-left: 1000px;
+    margin-left: 49vw;
     margin-bottom: 90px;
 
 }
@@ -756,6 +781,8 @@ a {
 
 .copyright::before {
     content: "\00A9";
+    font-size: 24px;
+margin-right: 5px;
 }
 
 .copyright {
@@ -765,8 +792,15 @@ a {
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.4px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 10px;
+    align-items: center;
+display: flex;
+}
+
+.social_link{
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .botom_footer {
@@ -774,7 +808,8 @@ a {
 }
 
 .botom_footer_left {
-    margin-left: 105px;
+    margin-left: 140px;
+margin-top: 20px;
 }
 
 .botom_footer_right {
@@ -789,6 +824,7 @@ a {
 .footer_sites {
     display: flex;
     justify-content: flex-end;
+    align-items: baseline;
 }
 
 .footer_text {

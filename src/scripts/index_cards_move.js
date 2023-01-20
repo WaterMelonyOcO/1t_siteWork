@@ -3,7 +3,8 @@ let cnt = parseInt(getComputedStyle(cardPlace).marginLeft);
 
 function leftClick() {
   // console.log(cnt);
-  if (cnt > -120) {
+  if (cnt >= -120) {
+    console.log(cardPlace.style.marginLeft);
     return false;
   } else {
     cardPlace.style.marginLeft = `${(cnt += 300)}px`;
@@ -13,7 +14,8 @@ function leftClick() {
 
 function rightClick() {
   // console.log(cnt);
-  if (cnt < -400) {
+  if (cnt < -120) {
+    console.log(cardPlace.style.marginLeft);
     return false;
   } else {
     cardPlace.style.marginLeft = `${(cnt -= 300)}px`;
