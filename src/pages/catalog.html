@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/catalog.css">
+    <title>Неизведанная Россия</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="main-title">Каталог туров</h1>
+            <div class="subtitle-cnt">
+                <p class="main-subtitle" id="tourFind">найдено 0 туров</p>
+                <div class="card-sorting">
+                    <p class="sort">Сортировать по:</p>
+                    <a class="famous-link" href="#" id="sortByPopular">Популярности</a>
+                    <a class="rating-link" href="#" id="sortByRating">Рейтингу</a>
+                    <a class="price-link" href="#" id="sortByPrice">Цене</a>
+                </div>
+            </div>
+            
+            <div class="container-fluid">
+            <!--ЛОКАЦИЯ-->
+            <div class="tour-filter">
+                <div class="filter-item">
+                    <h2 class="tour_location">Локация</h2>
+                    <img src="../media/imgCatalog/Vector.svg" alt="vector" class="tour-img">
+                </div>
+                <label class="checkbox-container">
+                    Алтай
+                    <input type="checkbox" id="altayCheckbox" value="altay" name="check"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Архыз
+                    <input type="checkbox" id="arhizCheckbox" value="arhiz"  name="check"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Байкал
+                    <input type="checkbox" checked id="baikalCheckbox" value="baikal" name="check"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Дагестан
+                    <input type="checkbox" id="dagestanCheckbox" value="dagestan" name="check"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Калининград
+                    <input type="checkbox" id="kaliningradCheckbox" value="kaliningrad" name="check"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container last">
+                    Карелия
+                    <input type="checkbox" id="kareliyaCheckbox" value="kareliya" name="check"/>
+                    <span class="checkmark"></span>
+                </label>
+
+
+                <!--КАТЕГОРИИ-->
+                <div class="filter-item">
+                    <h2 class="tour_location">Категория</h2>
+                    <img src="../media/imgCatalog/Vector.svg" alt="vector" class="tour-img">
+                </div>
+                <label class="checkbox-container">
+                    Индивидуальные туры
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container last">
+                    Групповые туры
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+
+
+                <!--Уровень-->
+                <div class="filter-item">
+                    <h2 class="tour_location">Уровень</h2>
+                    <img src="../media/imgCatalog/Vector.svg" alt="vector" class="tour-img">
+                </div>
+                <label class="checkbox-container">
+                    Базовый
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Средний
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container last">
+                    Сложный
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+
+
+                <!--ЦЕНА-->
+                <div class="range-controls">
+                    <p class="rage_name-price">Цена</p>
+                    <p class="rage_price" id="price_label">150 000 Р</p>
+                </div>
+                <input id="priceRange" type="range" min="0" max="150000" value="150000">
+
+
+                <!--ПРОДОЛЖИТЕЛЬНОСТЬ-->
+                <div class="range-controls">
+                    <p class="rage_duration">Продолжительность</p>
+                    <p class="rage_days" id="days_label">10 дней</p>
+                </div>
+                <input type="range" id="daysRange" min="1" max="15" value="15">
+
+
+                <!--ПРОЖИВАНИЕ-->
+                <div class="filter-item">
+                    <h2 class="tour_location">Проживание</h2>
+                    <img src="../media/imgCatalog/Vector.svg" alt="vector" class="tour-img">
+                </div>
+                <label class="checkbox-container">
+                    Палатка
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Гостиница
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Квартира
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Турбаза
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Гостевой дом
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    Без проживания
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+
+
+            </div>
+            <div class="cards-block" id="card-blocks">
+            </div>
+            </div>
+            <div class="pages">
+                <button class="start-btn">В начало</button>
+                <a href="#" class="pages-number1">1</a>
+                <a href="#" class="pages-number2">2</a>
+                <a href="#" class="pages-number3">3</a>
+                <a href="#" class="pages-number">...</a>
+                <a href="#" class="pages-number4">14</a>
+                <a href="#" class="pages-number5">15</a>
+                <button class="finish-btn">Дальше</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="../js/catalog.js"></script>
+</html>
