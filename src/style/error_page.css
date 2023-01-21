@@ -13,10 +13,17 @@
     height: 80vh;
 }
 
+.error-section a{
+    /* cursor: pointer; */
+    text-decoration: none;
+    color: white;
+}
 
 .ellipse-image{
     position: absolute;
     z-index: -5;
+    width: 657px;
+    height: 328px;
 }
 
 .error-image{
@@ -52,13 +59,18 @@
 
     color:white;
     background: #1EC28B;
-    border-radius: 20px;
+    border-radius: 8px;
+    border: none;
 
     /* Inside auto layout */
 
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.error-button:hover{
+    background: #20d196;
 }
 
 /* Дальше идут css для хидера(навигации)

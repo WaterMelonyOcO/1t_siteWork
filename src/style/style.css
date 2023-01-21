@@ -200,8 +200,8 @@ header {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.search-area::placeholder{
-    color:#808080;
+.search-area::placeholder {
+    color: #808080;
 }
 
 .search-button {
@@ -460,17 +460,24 @@ header {
     margin-bottom: 15px;
 }
 
-.video_prev_block_sub>.i1,
-.video_prev_block_sub>.i3 {
+.video_prev_block_sub .i1,
+.video_prev_block_sub .i3 {
 
     width: 485px;
     height: 270px;
+    filter: brightness(0.5);
 }
 
-.video_prev_block_sub>.i2 {
+.video_prev_block_sub .i2 {
     width: 560px;
     height: 314px;
     margin: 0px 20px;
+}
+
+.play_btn {
+    position: relative;
+    right: 50%;
+    bottom: 40%;
 }
 
 .video_prev {}
@@ -626,6 +633,14 @@ header {
 
 }
 
+.reviews_btn:hover {
+    background-color: #2fe5a8;
+}
+
+.reviews_btn:active {
+    background-color: #1aaa7a;
+}
+
 .reviews_btn_link {
     text-decoration: none;
     font-weight: 600;
@@ -717,9 +732,14 @@ header {
 
 }
 
+.form_btn:hover {
+    background: #dddddd;
+}
+
 .form_bottom {
     display: flex;
     margin: 0px;
+    align-items: center;
 }
 
 .form_field::placeholder {
@@ -782,7 +802,7 @@ a {
 .copyright::before {
     content: "\00A9";
     font-size: 24px;
-margin-right: 5px;
+    margin-right: 5px;
 }
 
 .copyright {
@@ -795,10 +815,10 @@ margin-right: 5px;
     margin-top: 30px;
     margin-left: 10px;
     align-items: center;
-display: flex;
+    display: flex;
 }
 
-.social_link{
+.social_link {
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -809,7 +829,7 @@ display: flex;
 
 .botom_footer_left {
     margin-left: 140px;
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 .botom_footer_right {

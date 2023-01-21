@@ -354,6 +354,9 @@ span {
 }
 
 /* footer */
+footer *{
+    margin: 0px auto;
+}
 .top_footer {
     display: flex;
     margin-top: 35%;
