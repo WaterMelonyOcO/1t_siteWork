@@ -76,16 +76,14 @@
 /* Дальше идут css для хидера(навигации)
 */
 .header-base{
-    /* max-width: 1400px; */
-    width: 100%;
     height: 83px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
 
     background: #F4F8F7;
 }
@@ -141,7 +139,7 @@
     height: 24px;
 
     border: 1px solid #000000;
-    border-radius: 20px;
+    border-radius: 8px;
 
     /* Inside auto layout */
 
@@ -153,6 +151,11 @@
 .search-button{
     position: relative;
     left: -25px;
+}
+
+.number{
+    font-family: 'Roboto';
+    font-style: normal;
 }
 
 .number::before{

@@ -331,7 +331,7 @@ input[type=range]:focus::-ms-fill-upper {
 .card {
   width: 270px;
   height: 530px;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 .img-cnt{
   height: 300px;
@@ -344,7 +344,7 @@ input[type=range]:focus::-ms-fill-upper {
   position: relative;
   display: block;
   max-width: 100px;
-  top: -285px;
+  top: -305px;
   left: 155px;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
@@ -645,6 +645,7 @@ input[type=range]:focus::-ms-fill-upper {
 .form_bottom {
   display: flex;
   margin: 0px;
+  align-items: center;
 }
 
 .form_field::placeholder {

@@ -46,10 +46,10 @@
 
 .serchFormBlock input {
     width: 250px;
-    height: 42px;
+    height: 26px;
     padding-left: 15px;
-    border-radius: 42px;
-    border: 2px solid #324b4e;
+    border-radius: 8px;
+    border: 1px solid #324b4e;
     outline: none;
     position: relative;
     /* transition: .3s linear; */ /*пока в коменты*/
@@ -57,12 +57,12 @@
 
 .serchFormBlock button {
     width: 42px;
-    height: 42px;
+    height: 26px;
     background: none;
     border: none;
     position: absolute;
     top: 0px;
-    right: 10px;
+    right: 0px;
 }
 
 /* при фокусировке увеличивается. Пока закоменчу, 
@@ -73,9 +73,9 @@
 /* \\\\\\/////\/\\/\//\\//\\\/ */
 
 /* язык и телефон */
-/* .PhoneLangBlock{
-    width: 200px;
-} */
+.LangBlock{
+    margin-right: 20px;
+}
 
 .PhoneBlock{
     margin-right: 20px;

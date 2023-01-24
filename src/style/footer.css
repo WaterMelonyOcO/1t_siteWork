@@ -2,71 +2,95 @@
 footer *{
     margin: 0px auto;
 }
-.top_footer{
+.top_footer {
     display: flex;
-    margin-top: 110px;
+    margin-top: 94px;
 }
-.footer_column{
+
+.footer_column {
     display: flex;
     flex-direction: column;
 }
-.footer_title{
+
+.footer_title {
     height: 20px;
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 20px;
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
     height: 20px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     margin: 20px 0;
     color: black;
 }
-.footer_line{
+
+.footer_line {
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
-.footer_payCards{
+
+.footer_payCards {
     display: flex;
 }
-.copyright::before{
-content: "\00A9";
+
+.copyright::before {
+    content: "\00A9";
+    font-size: 24px;
+    margin-right: 5px;
 }
-.copyright{
+
+.copyright {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.4px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 10px;
-}
-.botom_footer{
+    align-items: center;
     display: flex;
 }
-.botom_footer_left{
-    margin-left: 105px;
+
+.social_link {
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
-.botom_footer_right{
+
+.botom_footer {
+    display: flex;
+}
+
+.botom_footer_left {
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+.botom_footer_right {
     margin-right: 150px;
     margin-top: 53px;
 }
-.footer_sites_item{
+
+.footer_sites_item {
     margin-left: 25px;
 }
-.footer_sites{
-display: flex;
-justify-content: flex-end;
+
+.footer_sites {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
 }
-.footer_text{
+
+.footer_text {
     width: 516.64px;
     height: 80px;
 
@@ -78,4 +102,191 @@ justify-content: flex-end;
     text-align: right;
     letter-spacing: 0.4px;
     margin-top: 20px;
+}
+
+/* зелёные эконки */
+.connectLinks {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    padding: 0px 30px;
+}
+
+.linkBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkBlock>img {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 0px;
+}
+
+.email>img,
+.map>img {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 30px;
+}
+
+.map>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* верхняя линия */
+.upperHr {
+    margin-top: 40px;
+    margin-bottom: 52px;
+}
+
+/* различные блоки. О нас и т.д */
+.infoBlocks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+
+/* параметры для всех заголовков */
+.InfoHeader {
+    font-size: 20px;
+    font-family: 'Merriweather';
+}
+
+/* параметры для каждого блока */
+.infoBlock {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+/* доп настройка + ещё и для ссылок */
+.InfoLink,
+.InfoHeader {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+/* параметры для настроек */
+.InfoLink {
+    text-decoration: none;
+    color: black;
+}
+
+.InfoLink:last-child {
+    padding-bottom: 0px;
+}
+
+/* для нижней линии */
+.DownHr {
+    margin-top: 52px;
+    margin-bottom: 40px;
+}
+
+/* настройка для всего, что находиться в конце */
+.ElseInfoBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    font-family: 'Open Sans';
+}
+
+/* настройка для эконок соц. сетей */
+.IconLinks {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.IconLink>img {
+    width: 34px;
+    height: 34px;
+
+}
+
+/* vk подганял как мог */
+.VkIcon>img {
+    width: 40px;
+    height: 30px;
+}
+
+/* ту настрока для копирайта и текста */
+.ElseInfo {
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+/* для блока с копирайтом */
+.CopyriteBlock {
+    display: flex;
+    max-width: 220px;
+    justify-content: space-between;
+}
+
+.CopiriteText {
+    flex-wrap: wrap;
+    margin-left: 50px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/* для блока с согласием */
+.Agreement {
+    max-width: 500px;
+    text-align: right;
+    line-height: 25px;
+}
+
+/* немного не структурированно, но здесь настройка эконок для приложений */
+.paymentIcon {
+    margin-left: 30px;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+.paymentIcon:last-child {
+    padding-bottom: 0px;
+}
+
+/* доп настройка для нормального вертикального расширения */
+.AppsSub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    margin-left: 15px;
+}
+
+/* просто для блока с маркетами */
+.Apps {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.Apps>p {
+    font-size: 10px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+.Apps>img {
+    width: 20px;
+    height: 24px;
+}
+
+.Apps>p>.bolt {
+    font-size: 12px;
+    font-weight: bolder;
 }

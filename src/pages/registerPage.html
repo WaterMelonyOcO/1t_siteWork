@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="../style/registerPageStyle.css" /> -->
     <link rel="stylesheet" href="../style/registerBlank.css" />
@@ -15,20 +15,20 @@
       <!-- логотип -->
       <div class="headerElements">
         <dev class="headerElement logoImg">
-          <img src="../media/image/logo.svg" />
+          <a href="../../index.html"><img src="../media/image/logo.svg" /></a>
         </dev>
       </div>
       <!-- пункты "наши туры" и т.д -->
       <div class="headerElements turLinks">
         <ul>
           <li class="headerElement turLink">
-            <a class="turParticle">Кто мы</a>
+            <a href="./about_us.html" class="turParticle">Кто мы</a>
           </li>
           <li class="headerElement turLink">
             <a class="turParticle">Наши туры</a>
           </li>
           <li class="headerElement turLink">
-            <a class="turParticle">В путишествие</a>
+            <a href="./catalog.html" class="turParticle">В путишествие</a>
           </li>
         </ul>
       </div>
@@ -45,153 +45,199 @@
       </div>
       <!-- телефон и язык -->
       <div class="headerElements PhoneLangBlock">
-        <dev class="headerElement PhoneBlock">
+        <div class="headerElement PhoneBlock">
           <img class="phoneImg" src="../media/image/PhoneImg.png" />
           <p class="phoneNumber">+7499374389</p>
-        </dev>
-        <dev class="headerElement LangBlock">
+        </div>
+        <div class="headerElement LangBlock">
           <img class="langImg" src="../media/image/globe.png" />
-        </dev>
+        </div>
+        <div class="headerElement burger">
+          <img class="burger_img" src="../media/image/burgmenu.png" />
+        </div>
       </div>
     </header>
     <section id="content">
       <div class="registerBlocks">
         <div class="Image">
-            <img src="../media/image/picture_welcome.png"/>
+          <img src="../media/image/picture_welcome.png" />
         </div>
         <div class="registerFildsBlockSub">
-            <div class="wellcomeField">
-                <div class="wellcomeText">
-                    <h3 class="headText">Мы вас ждали!</h3>
-                    <p>Регистрация вашего аккаунта</p>
-                </div>
+          <div class="wellcomeField">
+            <div class="wellcomeText">
+              <h3 class="headText">Мы вас ждали!</h3>
+              <p>Регистрация вашего аккаунта</p>
             </div>
-            <div class="registerForm">
-                <form class="regForm" id="nameTelephone" action="registerPageCode.html">
-                    <div class="regField">
-                        <p>
-                          <label for="name">Имя</label>
-                        </p>
-                        <input  class="firstForm"
-                                type="text"
-                                placeholder="Александр"
-                                tabindex="1"
-                                name="name"
-                                id="name"
-                        />
-                    </div>
-                    <div class="regField">
-                        <p>
-                          <label for="tel">Телефон</label>
-                        </p>
-                        <input
-                                class="firstForm"
-                                type="tel"
-                                placeholder="+70000000"
-                                tabindex="2"
-                                pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                                name="tel"
-                                id="tel"
-                        />
-                    </div>
-                    <div class="regButton">
-                        <button type="submit" id="submitBtnFirstForm">получить SMS</button>
-                    </div>
-                </form>
-            </div>
+          </div>
+          <div class="registerForm">
+            <form
+              class="regForm"
+              id="nameTelephone"
+              action="registerPageCode.html"
+            >
+              <div class="regField">
+                <p>
+                  <label for="name">Имя</label>
+                </p>
+                <input
+                  class="firstForm"
+                  type="text"
+                  placeholder="Александр"
+                  tabindex="1"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div class="regField">
+                <p>
+                  <label for="tel">Телефон</label>
+                </p>
+                <input
+                  class="firstForm"
+                  type="tel"
+                  placeholder="+70000000"
+                  tabindex="2"
+                  pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                  name="tel"
+                  id="tel"
+                />
+              </div>
+              <div class="regButton">
+                <button type="submit" id="submitBtnFirstForm">
+                  получить SMS
+                </button>
+              </div>
+            </form>
+          </div>
 
-            <div class="socialLinksBlock">
-                <p>Создать аккаунт с помощью</p>
-                <div class="socialLinks">
-                    <div class="socialLink">
-                        <a href="#"
-                        ><img src="../media/image/social1.svg" alt="логотип гугл"
-                        /></a>
-                    </div>
-                    <div class="socialLink">
-                        <a href="#"
-                        ><img src="../media/image/social2.svg" alt="логотип гугл"
-                        /></a>
-                    </div>
-                    <div class="socialLink">
-                        <a href="#"
-                        ><img
-                                src="../media/image/social3.svg"
-                                alt="логотип одноклассники"
-                        /></a>
-                    </div>
-                    <div class="socialLink">
-                        <a href="#"
-                        ><img
-                                src="../media/image/social4.svg"
-                                alt="логотип в контакте"
-                        /></a>
-                    </div>
-                </div>
+          <div class="socialLinksBlock">
+            <p>Создать аккаунт с помощью</p>
+            <div class="socialLinks">
+              <div class="socialLink">
+                <a href="#"
+                  ><img src="../media/image/social1.svg" alt="логотип гугл"
+                /></a>
+              </div>
+              <div class="socialLink">
+                <a href="#"
+                  ><img src="../media/image/social2.svg" alt="логотип гугл"
+                /></a>
+              </div>
+              <div class="socialLink">
+                <a href="#"
+                  ><img
+                    src="../media/image/social3.svg"
+                    alt="логотип одноклассники"
+                /></a>
+              </div>
+              <div class="socialLink">
+                <a href="#"
+                  ><img
+                    src="../media/image/social4.svg"
+                    alt="логотип в контакте"
+                /></a>
+              </div>
             </div>
-            <div class="registerFilds">
-                <div class="registerFildsBlock">
-                    <a href="#">Регистрация</a>
-                    <a href="./enter.html">Вход</a>
-                </div>
+          </div>
+          <div class="registerFilds">
+            <div class="registerFildsBlock">
+              <a href="#">Регистрация</a>
+              <a href="./enter.html">Вход</a>
             </div>
+          </div>
         </div>
       </div>
     </section>
     <footer>
       <section class="top_footer">
-          <div class="footer_column">
-              <h3 class="footer_title">О нас</h3>
-              <a href="./about_us.html">Кто мы</a>
-              <a href="#">Наши авторы</a>
-              <a href="#">Наша команда</a>
-              <a href="#">Партнеры</a>
-          </div>
-          <div class="footer_column">
-              <h3 class="footer_title">Помощь</h3>
-              <a href="№">Стать автором</a>
-              <a href="#">Выбрать путешествие</a>
-              <a href="#">Центр поддержки</a>
-              <a href="#">Программа лояльности</a>
-              <a href="#">Возврат</a>
-          </div>
-          <div class="footer_column">
-              <h3 class="footer_title">Контакты</h3>
-              <a href="#">+7 (000) 000 00 00</a>
-              <a href="#">russia@tourism.ru</a>
-          </div>
-          <div class="footer_column">
-              <h3 class="footer_title">Приложения для вас</h3>
-              <a href="#"><img src="../media/image/footer/googleplay.png" alt="иконка googleplay"></a>
-              <a href="#"><img src="../media/image/footer/appstore.png" alt="иконка appstore"></a>
-  
-          </div>
+        <div class="footer_column">
+          <h3 class="footer_title">О нас</h3>
+          <a href="../pages/about_us.html">Кто мы</a>
+          <a href="">Наши авторы</a>
+          <a href="./about_us.html#team">Наша команда</a>
+          <a href="#">Партнеры</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Помощь</h3>
+          <a href="">Стать автором</a>
+          <a href="./catalog.html">Выбрать путешествие</a>
+          <a href="#">Центр поддержки</a>
+          <a href="#">Программа лояльности</a>
+          <a href="#">Возврат</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Контакты</h3>
+          <a href="#">+7 (000) 000 00 00</a>
+          <a href="#">russia@tourism.ru</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Приложения для вас</h3>
+          <a href="#"
+            ><img
+              src="../media/image/footer/googleplay.png"
+              alt="иконка googleplay"
+          /></a>
+          <a href="#"
+            ><img
+              src="../media/image/footer/appstore.png"
+              alt="иконка appstore"
+          /></a>
+        </div>
       </section>
       <div class="footer_line"></div>
       <section class="botom_footer">
-          <div class="botom_footer_left">
-              <div class="footer_payCards">
-                  <a href="#"><img class="footer_payCards_item" src="../media/image/footer/visa.png" alt="карта виза"></a>
-                  <a href="#"><img class="footer_payCards_item" src="../media/image/footer/mir.png" alt="карта мир"></a>
-                  <a href="#"><img class="footer_payCards_item" src="../media/image/footer/mastercard.png"
-  
-                          alt="карта мастеркард"></a>
-              </div>
-              <p class="copyright">Неизведанная Россиия –2022</p>
+        <div class="botom_footer_left">
+          <div class="footer_payCards">
+            <a href="#"
+              ><img
+                class="footer_payCards_item"
+                src="../media/image/footer/visa.png"
+                alt="карта виза"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer_payCards_item"
+                src="../media/image/footer/mir.png"
+                alt="карта мир"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer_payCards_item"
+                src="../media/image/footer/mastercard.png"
+                alt="карта мастеркард"
+            /></a>
           </div>
-          <div class="botom_footer_right">
-              <div class="footer_sites">
-                  <a href="#"><img class="footer_sites_item" src="../media/image/footer/vk.png" alt="иконка вк"></a>
-                  <a href="#"><img class="footer_sites_item" src="../media/image/footer/youtube.png" alt="иконка ютуба"></a>
-                  <a href="#"><img class="footer_sites_item" src="../media/image/footer/telegram 1.png" alt="иконка телеграма"></a>
-  
-  
-              </div>
-              <p class="footer_text">Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских
-                  данных, в соответствии с Политикой конфиденциальности и пользовательским соглашением</p>
+          <p class="copyright">Неизведанная Россиия –2022</p>
+        </div>
+        <div class="botom_footer_right">
+          <div class="footer_sites">
+            <a class="social_link" href="#"
+              ><img
+                class="footer_sites_item"
+                src="../media/image/footer/vk.png"
+                alt="иконка вк"
+            /></a>
+            <a class="social_link" href="#"
+              ><img
+                class="footer_sites_item"
+                src="../media/image/footer/youtube.png"
+                alt="иконка ютуба"
+            /></a>
+            <a class="social_link" href="#"
+              ><img
+                class="footer_sites_item"
+                src="../media/image/footer/telegram 1.png"
+                alt="иконка телеграма"
+            /></a>
           </div>
+          <p class="footer_text">
+            Продолжая использовать наш сайт, вы даете согласие на обработку
+            файлов Cookies и других пользовательских данных, в соответствии с
+            Политикой конфиденциальности и пользовательским соглашением
+          </p>
+        </div>
       </section>
-  </footer>
+    </footer>
   </body>
   <script src="../scripts/validate.js"></script>
 </html>
