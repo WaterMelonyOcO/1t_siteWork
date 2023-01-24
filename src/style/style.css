@@ -286,6 +286,117 @@ header {
     transition: all 0.5s;
 }
 
+/* форма с быстрым переходом */
+.ac {
+    border: none !important;
+}
+
+.choices * {
+    font-family: "Roboto", sans-serif;
+}
+
+.choices {
+    width: 946px;
+    padding: 16px 24px 24px 100px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.choices-accordions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 585px;
+}
+
+.choices .ac .ac-trigger {
+    padding: 0;
+}
+
+.choices .ac .ac-text {
+    cursor: pointer;
+}
+
+.choice__accordion-title {
+    text-transform: uppercase;
+    color: #898787;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.choice__accordion-title img {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.choice__accordion {
+    position: relative;
+}
+
+.choice__accordion_1 {
+    padding-right: 40px;
+    width: 155px;
+}
+
+.choice__accordion_2 {
+    padding: 0 15px 0 25px;
+    border-left: 1px solid #9b9b9b;
+    border-right: 1px solid #9b9b9b;
+    width: 190px;
+}
+
+.choice__accordion_3 {
+    padding-left: 21px;
+}
+
+.choices .ac .ac-trigger::after {
+    content: "";
+    width: 13px;
+    height: 7px;
+    background-image: url("../media/image/Vector1.svg");
+    background-size: cover;
+}
+
+.choices .ac.is-active>.ac-header .ac-trigger::after {
+    content: "";
+}
+
+.choices .ac-panel {
+    position: absolute;
+    top: 117.5%;
+    left: 0;
+    width: 95%;
+    background-color: white;
+    border: 1px solid #9b9b9b;
+    z-index: 10;
+}
+
+.choices-button {
+    width: 169px;
+    height: 47px;
+    border-radius: 8px;
+    background-color: #1ec28b;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.choices-button:hover{
+    background-color: #24e1a2;
+}
+
+.rewiews_card {
+    transition: all 0.3s ease;
+}
+
+.rewiews_card:hover {
+    transform: scale(1.1);
+}
 
 
 /* настройка для каждой карты */

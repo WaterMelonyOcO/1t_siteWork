@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Неизведанная Россия</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reseter.css" />
     <link href="./src/style/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css"
+    />
   </head>
 
   <body>
@@ -46,19 +51,61 @@
         <h2 class="sub_text">Твое путешествие начинается здесь</h2>
       </div>
     </header>
-    <!-- <div class="travel_form">
-      <img
-        src="./src/media/image/choose.png"
-        alt="затычка временно"
-        class="choose"
-      />
-    </div>-->
-    <div>
-      <img
-        src="./src/media/image/choose.png"
-        alt="затычка временно"
-        class="choose"
-      />
+    <div class="choices">
+      <div class="choices-accordions">
+        <div class="choice__accordion choice__accordion_1">
+          <p class="choice__accordion-title">
+            <img src="./src/media/image/map-pin.svg" alt="" /> место
+          </p>
+          <div class="ac">
+            <h2 class="ac-header choice__accordion-text_1">
+              <button type="button" class="ac-trigger">Байкал</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">Архыз</p>
+              <p class="ac-text">Байкал</p>
+              <p class="ac-text">Калининград</p>
+            </div>
+          </div>
+        </div>
+        <div class="choice__accordion choice__accordion_2">
+          <p class="choice__accordion-title">
+            <img src="./src/media/image/user.svg" alt="" /> туристы
+          </p>
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">2 человека</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">2 человека</p>
+              <p class="ac-text">3 человека</p>
+              <p class="ac-text">4 человека</p>
+            </div>
+          </div>
+        </div>
+        <div class="choice__accordion choice__accordion_3">
+          <p class="choice__accordion-title">
+            <img src="./src/media/image/book-open.svg" alt="" />
+            продолжительность
+          </p>
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">5 дней</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">4 дня</p>
+              <p class="ac-text">5 дней</p>
+              <p class="ac-text">6 дней</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="choices-button"
+        onclick="document.location='./src/pages/catalog.html'"
+      >
+        искать
+      </button>
     </div>
     <section class="section-one">
       <h1 class="head-whywe">ПОЧЕМУ МЫ?</h1>
@@ -188,19 +235,6 @@
             >
               <source type="video/mp4" src="./src/media/video/hsr.mp4" />
             </video>
-            <!-- <div class="video_1">
-              
-              <img class="video_prev i1" src="./src/media/image/Video1.png" />
-              <img class="play_btn" src="./src/media/image/playcircle.svg">
-            </div> -->
-            <!-- <div class="video_2">
-              
-              <img class="video_prev i2" src="./src/media/image/Video2.png" />
-              <img class="play_btn" src="./src/media/image/playcircle.svg"></div>
-            <div class="video_3">
-              
-              <img class="video_prev i3" src="./src/media/image/Video2.png" />
-              <img class="play_btn" src="./src/media/image/playcircle.svg"></div> -->
           </div>
         </div>
         <div class="video_more VP">
@@ -508,6 +542,9 @@
         </div>
       </section>
     </footer>
+
+    <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+    <script src="./src/scripts/search_form.js"></script>
     <script src="./src/scripts/index_cards_move.js"></script>
   </body>
 </html>
