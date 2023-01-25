@@ -806,6 +806,15 @@ function locDetect(loc){
     else if ( loc === 'kaliningrad'){
         return "./Turs/Kaliningrad.html"
     }
+    else if ( loc === 'altay'){
+        return "./Turs/altay.html"
+    }
+    else if ( loc === 'arhiz'){
+        return "./Turs/arhiz.html"
+    }
+    else if ( loc === 'kareliya'){
+        return "./Turs/Karelia.html"
+    }
     else{
         return false
     }

@@ -499,6 +499,10 @@
     /* width: 150px; */
 }
 
+.serchFormBlock input::placeholder{
+    color:#808080
+}
+
 .info_conteiner,
 .min_age {
     display: flex;
@@ -744,6 +748,7 @@
 .form_bottom {
     display: flex;
     margin: 0px;
+    align-items: center;
 }
 
 .form_field::placeholder {

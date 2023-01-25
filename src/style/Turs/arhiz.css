@@ -1,0 +1,30 @@
+.ib1 {
+    background-image: url("../../media/image/arhiz1.jpg"); !important;
+}
+
+.ib2 {
+    background-image: url("../../media/image/arhiz2.jpg"); !important;
+}
+
+.ib3 {
+    background-image: url("../../media/image/arhiz3.jpg"); !important;
+    background-position: 40%;
+}
+
+.reviews_all {
+    display: flex;
+    flex-direction: row;
+    justify-content: safe center;
+    align-content: center;
+
+    width: 100%;
+
+    padding: 0px 150px;
+
+    margin-bottom: 50px;
+
+
+    background-image: url("../../media/image/arhizRewImg.png"); !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

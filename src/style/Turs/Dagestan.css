@@ -84,6 +84,10 @@
     /*пока в коменты*/
 }
 
+.serchFormBlock input::placeholder{
+    color:#808080
+}
+
 .serchFormBlock button {
     width: 42px;
     height: 42px;
@@ -744,6 +748,7 @@
 .form_bottom {
     display: flex;
     margin: 0px;
+    align-items: center;
 }
 
 .form_field::placeholder {

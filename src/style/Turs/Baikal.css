@@ -71,6 +71,10 @@
     position: relative;
 }
 
+.serchFormBlock input::placeholder{
+    color:#808080
+}
+
 .serchFormBlock input {
     width: 250px;
     height: 24px;
@@ -744,6 +748,7 @@
 .form_bottom {
     display: flex;
     margin: 0px;
+    align-items: center;
 }
 
 .form_field::placeholder {
