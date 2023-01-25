@@ -1,0 +1,1056 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto/Roboto-Regular.ttf"),
+        url("../../fonts/Roboto/Roboto-Bold.ttf"),
+        url("../../fonts/Roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../../fonts/Merriweather/Merriweather-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../../fonts/Open_sans/OpenSans-Regular.ttf");
+}
+
+
+
+
+/* шапка */
+
+#header {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto;
+    padding: 0px 40px;
+    height: 5.25em;
+    color: black;
+
+    width: 100%;
+}
+
+.from {
+    background: none;
+}
+
+#header a {
+    font-size: 16px;
+}
+
+/* список пунктов */
+.turLink {
+    margin-right: 30px;
+}
+
+.turLink:last-child {
+    margin-right: 0px;
+}
+
+/* ////\\\\ */
+
+/* это для всех элементов */
+.headerElement {
+    display: inline-block;
+}
+
+/* это для поиска, вся сворована */
+.serchFormBlock::after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.serchFormBlock .form {
+    width: auto;
+    float: right;
+    margin-right: 30px;
+    position: relative;
+}
+
+.serchFormBlock input {
+    width: 250px;
+    height: 24px;
+    padding-left: 15px;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline: none;
+    position: relative;
+    background: none;
+    /* transition: .3s linear; */
+    /*пока в коменты*/
+}
+
+.serchFormBlock button {
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: -6px;
+    right: 0px;
+}
+
+/* при фокусировке увеличивается. Пока закоменчу, 
+но фишка прикольная */
+/* .serchFormBlock input:focus {
+    width: 350px;
+} */
+/* \\\\\\/////\/\\/\//\\//\\\/ */
+
+/* язык и телефон */
+/* .PhoneLangBlock{
+    width: 200px;
+} */
+
+.PhoneBlock {
+    margin-right: 20px;
+}
+
+.PhoneBlock img {
+    float: left;
+    margin-right: 10px;
+}
+
+.PhoneBlock p {
+    float: right;
+}
+
+/* ///////////////// */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+
+#move_info_block {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 85px;
+
+    height: 100em;
+}
+
+.content {
+    padding-left: 40%;
+    padding-right: 20px;
+
+    height: 500px;
+}
+
+.info_block {
+    /* width: 500px; */
+    padding-top: 18em;
+    width: calc((100%) / 3);
+    transition: 0.5s ease-in-out;
+}
+
+.background_img {
+    background-size: 180em;
+    background-repeat: no-repeat;
+}
+
+.ib1 {
+    background-image: url("../../media/image/dagIm3.png");
+    background-size: 130%;
+}
+
+.ib2 {
+    background-image: url("../../media/image/dagIm2.png");
+    background-size: 100%;
+}
+
+.ib3 {
+    background-image: url("../../media/image/dagIm1.png");
+    background-size: 200%;
+}
+
+/* блок всего текста */
+.block_inform {
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+
+    /* height: 500px; */
+}
+
+.info_block:hover .block_inform {
+    visibility: visible;
+
+}
+
+.info_block:hover {
+    width: calc((100% + 30%) / 3);
+}
+
+/* .info_block:hover .numb:{
+    left: calc(80% - 10% - 50px);
+} */
+
+/* текст */
+.title_head h2 {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-size: 26px;
+    margin-bottom: 2em;
+}
+
+.info_particl>p {
+
+    font-family: 'Open Sans';
+
+    font-size: 20px;
+}
+
+/* номер "фишки" */
+
+.numb {
+    color: white;
+    font-size: 60px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    line-height: 15px;
+
+    position: relative;
+    width: 140px;
+    height: 140px;
+    left: calc(80% - 8%);
+    top: 45%;
+
+    background: #1EC28B;
+    border-radius: 50%;
+
+    text-align: center;
+    padding-top: 1em;
+}
+
+
+/* о самом туре и его авторе */
+
+#about_travel {
+    margin-bottom: 10px;
+}
+
+.travel_content {
+    margin: 0px auto;
+    height: 100%;
+    width: 75%;
+}
+
+
+.tour_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* здесь настройки для описания автора и т.д. */
+/* часть где имя и статус */
+.about_guid {
+    width: 48%;
+}
+
+.Autho_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.description_author {}
+
+.author,
+.valid_authtor {
+    width: 350px;
+    align-items: center;
+}
+
+.author_mark {
+    margin-right: 60px;
+}
+
+.author>p {
+    display: inline-block;
+    font-size: 22px;
+}
+
+.valid_authtor>* {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.status_img {
+    margin-right: 18px;
+}
+
+/* часть про текст */
+.description_author {
+    font-size: 16;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+/* отдел с кнопкой "программа тура" */
+
+.tour_prog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 400px;
+
+    margin-bottom: 60px;
+
+    font-size: 22px;
+}
+
+.tour_look_btn{
+    height: auto;
+}
+
+.tour_but {
+    width: 180px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 1px solid #1EC28B;
+    border-radius: 10px;
+
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 22px;
+
+    color: #1EC28B;
+    font-size: 16px;
+    transition: ease-in 0.2s;
+}
+
+.tour_but:hover {
+    background-color: #1EC28B;
+    color: white;
+}
+
+.tour_but:active {
+    background-color: #158c64;
+    color: white;
+}
+
+/* важно знать */
+
+.important {}
+
+.imp_head {
+    margin-bottom: 24px;
+}
+
+.imp_thing>ul {
+    padding: 0px;
+}
+
+.imp_li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 550px;
+
+    margin-bottom: 22px;
+}
+
+
+/* аватарка */
+
+.Avatar {
+    width: 60%;
+    text-align: start;
+}
+
+.avatar_img {
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 120px;
+    /* border: 3px solid #1EC28B;
+    border-radius: 100px; */
+}
+
+/* здесь настройки для тура. Цена, место и т.д. */
+.about_tur {
+    background: #F4F8F7;
+    border-radius: 10px;
+    width: 60%;
+    /* height: 747px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px 0px;
+}
+
+.in_block {
+    padding: 0px 60px;
+}
+
+/* это до даты */
+
+.order_block {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 140px;
+    margin-bottom: 40px;
+}
+
+.price_favorit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price_favorit p {
+    font-size: 30px;
+}
+
+.price_favorit p::after {
+    content: ' \20BD';
+}
+
+.ticket_text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #4A4A4A;
+}
+
+.dur_content ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 0px;
+}
+
+.dur_content li {
+    display: flex;
+    width: 100%;
+}
+
+.dur_content li img {
+    margin-right: 10px;
+}
+
+.dur_content li:first-child {
+    margin-right: 50px;
+}
+
+.order_button {
+    width: 100%;
+    height: 47px;
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+    background: #1EC28B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+    transition: ease-in 0.2s;
+}
+
+.order_button:hover {
+    background-color: white;
+    color: #1EC28B;
+    border: 1px solid #1EC28B;
+}
+
+.order_button:active {
+    background-color: #158c64;
+    color: white;
+}
+
+/* дата */
+
+.some_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 140px;
+    /* width: 250px; */
+}
+
+.some_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* width: 150px; */
+}
+
+.info_conteiner,
+.min_age {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info_cont_img {
+    margin-right: 40px;
+}
+
+.bolter {
+    margin-right: 15px;
+}
+
+.option {
+    align-items: flex-start;
+}
+
+.imp_li_img img {
+    width: 30px;
+}
+
+
+/* общая */
+
+.tur_hr {
+    margin: 25px 0px;
+    color: #e3e3e362;
+}
+
+.t_head {
+    margin-bottom: 20px;
+}
+
+/* отзывы */
+.reviews_wrapper * {
+    margin: 0px auto;
+}
+
+.reviews_wrapper {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start; */
+    padding: 10px 0px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.reviews_wrapper>.reviews_btn {
+    align-self: center;
+}
+
+.reviews_title {
+    font-family: 'Merriweather';
+    margin: 0px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+
+}
+
+.reviews_title_block {
+    text-align: left;
+    margin: 0px auto;
+    height: 100%;
+    width: 75%;
+}
+
+.reviews_text {
+    margin: 0px;
+    margin-bottom: 50px;
+    width: 350px;
+    display: flex;
+}
+
+
+/* карточки */
+.reviews_all {
+    display: flex;
+    flex-direction: row;
+    justify-content: safe center;
+    align-content: center;
+
+    width: 100%;
+
+    padding: 0px 150px;
+
+    margin-bottom: 50px;
+
+
+    background-image: url("../../media/image/rewImgDag.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+.rewiews_card {
+
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 28px 8px;
+    margin-right: 20px;
+    margin-top: 20.5vh;
+
+    width: 270px;
+    /* max-height: 370px; */
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.card_text {
+    overflow: hidden;
+}
+
+.avatar_img_block {
+    margin-bottom: 16px;
+}
+
+.card_mark_name {
+    margin-bottom: 25px;
+}
+
+.card_mark_name>.author_name {
+    margin-bottom: 9px;
+}
+
+
+
+/* ////////////////// */
+.reviews_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+
+    width: 220px;
+    height: 47px;
+
+    background: #1EC28B;
+    border-radius: 8px;
+
+}
+
+.reviews_btn_link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFF;
+    letter-spacing: 0.4px;
+    font-family: 'Roboto';
+    font-style: normal;
+
+}
+
+/* form */
+
+.footer_form {
+    background-color: #1EC28B;
+
+}
+
+.form_all {
+    padding: 35px 209px 35px 150px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 752px;
+    justify-content: space-around;
+}
+
+.form_tytle {
+    width: 371px;
+    height: 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.form_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    margin-left: 0;
+}
+
+.form_field {
+    width: 41em;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 4px;
+    padding-left: 8px;
+    border-color: #1EC28B;
+    margin: 0px;
+    box-shadow: none;
+    border: none;
+}
+
+.form_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 151px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 42px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #1EC28B;
+
+    box-shadow: none;
+    border: none;
+
+}
+
+.form_bottom {
+    display: flex;
+    margin: 0px;
+}
+
+.form_field::placeholder {
+    font-size: 18px;
+}
+
+::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.form_img {
+    position: absolute;
+    margin-left: 49vw;
+    margin-bottom: 90px;
+
+}
+
+/* footer */
+footer *{
+    margin: 0px auto;
+}
+.top_footer {
+    display: flex;
+    margin-top: 64px;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_title {
+    height: 20px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 20px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    height: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px 0;
+    color: black;
+}
+
+.footer_line {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer_payCards {
+    display: flex;
+}
+
+.copyright::before {
+    content: "\00A9";
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.copyright {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin-top: 30px;
+    margin-left: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.social_link {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.botom_footer {
+    display: flex;
+}
+
+.botom_footer_left {
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+.botom_footer_right {
+    margin-right: 150px;
+    margin-top: 53px;
+}
+
+.footer_sites_item {
+    margin-left: 25px;
+}
+
+.footer_sites {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.footer_text {
+    width: 516.64px;
+    height: 80px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.4px;
+    margin-top: 20px;
+}
+
+/* зелёные эконки */
+.connectLinks {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    padding: 0px 30px;
+}
+
+.linkBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkBlock>img {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 0px;
+}
+
+.email>img,
+.map>img {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 30px;
+}
+
+.map>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* верхняя линия */
+.upperHr {
+    margin-top: 40px;
+    margin-bottom: 52px;
+}
+
+/* различные блоки. О нас и т.д */
+.infoBlocks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+
+/* параметры для всех заголовков */
+.InfoHeader {
+    font-size: 20px;
+    font-family: 'Merriweather';
+}
+
+/* параметры для каждого блока */
+.infoBlock {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+/* доп настройка + ещё и для ссылок */
+.InfoLink,
+.InfoHeader {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+/* параметры для настроек */
+.InfoLink {
+    text-decoration: none;
+    color: black;
+}
+
+.InfoLink:last-child {
+    padding-bottom: 0px;
+}
+
+/* для нижней линии */
+.DownHr {
+    margin-top: 52px;
+    margin-bottom: 40px;
+}
+
+/* настройка для всего, что находиться в конце */
+.ElseInfoBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    font-family: 'Open Sans';
+}
+
+/* настройка для эконок соц. сетей */
+.IconLinks {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.IconLink>img {
+    width: 34px;
+    height: 34px;
+
+}
+
+/* vk подганял как мог */
+.VkIcon>img {
+    width: 40px;
+    height: 30px;
+}
+
+/* ту настрока для копирайта и текста */
+.ElseInfo {
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+/* для блока с копирайтом */
+.CopyriteBlock {
+    display: flex;
+    max-width: 220px;
+    justify-content: space-between;
+}
+
+.CopiriteText {
+    flex-wrap: wrap;
+    margin-left: 50px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/* для блока с согласием */
+.Agreement {
+    max-width: 500px;
+    text-align: right;
+    line-height: 25px;
+}
+
+/* немного не структурированно, но здесь настройка эконок для приложений */
+.paymentIcon {
+    margin-left: 30px;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+.paymentIcon:last-child {
+    padding-bottom: 0px;
+}
+
+/* доп настройка для нормального вертикального расширения */
+.AppsSub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    margin-left: 15px;
+}
+
+/* просто для блока с маркетами */
+.Apps {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.Apps>p {
+    font-size: 10px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+.Apps>img {
+    width: 20px;
+    height: 24px;
+}
+
+.Apps>p>.bolt {
+    font-size: 12px;
+    font-weight: bolder;
+}

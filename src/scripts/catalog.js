@@ -798,7 +798,13 @@ function genCard(card) {
 // поидее эта функция должна возвращать ссылку на типовую страницу, Ы
 function locDetect(loc){
     if ( loc === 'baikal'){
-        return "./turCard.html"
+        return "./Turs/Baikal.html"
+    }
+    else if ( loc === 'dagestan'){
+        return "./Turs/Dagestan.html"
+    }
+    else if ( loc === 'kaliningrad'){
+        return "./Turs/Kaliningrad.html"
     }
     else{
         return false
