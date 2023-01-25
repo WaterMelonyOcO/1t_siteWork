@@ -1,0 +1,12 @@
+.ib1 {
+    background-image: url("../media/image/arhiz1.jpg"); !important;
+}
+
+.ib2 {
+    background-image: url("../media/image/arhiz2.jpg"); !important;
+}
+
+.ib3 {
+    background-image: url("../media/image/arhiz3.jpg"); !important;
+    background-position: 40%;
+}
