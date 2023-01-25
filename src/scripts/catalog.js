@@ -782,7 +782,7 @@ function genCard(card) {
         const watchButton = document.createElement('a')
         watchButton.className = 'card_button'
         watchButton.innerHTML = 'СМОТРЕТЬ'
-        watchButton.href = '#'
+        watchButton.href = locDetect(m.loc)
         buttonContainer.append(watchButton)
 
         // Like button
@@ -792,6 +792,17 @@ function genCard(card) {
         like.alt = 'favourite'
         buttonContainer.append(like)
     })
+}
+
+// (Влад)
+// поидее эта функция должна возвращать ссылку на типовую страницу, Ы
+function locDetect(loc){
+    if ( loc === 'baikal'){
+        return "./turCard.html"
+    }
+    else{
+        return false
+    }
 }
 
 checkboxHandler();
