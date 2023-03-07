@@ -36,7 +36,7 @@ header {
     height: 700px;
     margin-bottom: -50px;
     width: 100%;
-    background-image: url(../media/image/picture_banner.png);
+    background-image: url("/resources/media/picture_banner.png");
     background-size: 100%;
 }
 

@@ -1,0 +1,22 @@
+{
+  "name": "untraveled_russia",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaterMelonyOcO/1t_siteWork.git"
+  },
+  "author": "untrave_russia_team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WaterMelonyOcO/1t_siteWork/issues"
+  },
+  "homepage": "https://github.com/WaterMelonyOcO/1t_siteWork#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

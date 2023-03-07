@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Неизведанная Россия</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reseter.css" />
-    <link href="./src/style/style.css" rel="stylesheet" />
+    <link href="resources/style/style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css"
@@ -17,7 +17,7 @@
     <!-- для эдентичности шапка пока будт машена т.к. она болеее -->
     <header>
       <div class="header-base">
-        <img src="./src/media/image/logo.svg" alt="логотип" class="logo" />
+        <img src="/resources/media/logo.svg" alt="логотип" class="logo" />
         <div class="navigation-menu">
           <a href="./src/pages/about_us.html" class="navigation-page">Кто мы</a>
           <a href="#" class="navigation-page">Наши авторы</a>
@@ -33,17 +33,17 @@
             placeholder="Поиск..."
           />
           <button class="navigation-button search-button">
-            <img src="./src/media/image/search.svg" />
+            <img src="/resources/media/search.svg" />
           </button>
         </form>
         <div>
           <p class="number">+7 (000) 000 00 00</p>
         </div>
         <button class="navigation-button">
-          <img src="./src/media/image/globe.svg" alt="иконка глобуса" />
+          <img src="/resources/media/globe.svg" alt="иконка глобуса" />
         </button>
         <button class="navigation-button">
-          <img src="./src/media/image/burgmenu.png" alt="иконка меню" />
+          <img src="/resources/media/burgmenu.png" alt="иконка меню" />
         </button>
       </div>
       <div class="banner">
@@ -51,85 +51,88 @@
         <h2 class="sub_text">Твое путешествие начинается здесь</h2>
       </div>
     </header>
-    <div class="choices">
-      <div class="choices-accordions">
-        <div class="choice__accordion choice__accordion_1">
-          <p class="choice__accordion-title">
-            <img src="./src/media/image/map-pin.svg" alt="" /> место
-          </p>
-          <div class="ac">
-            <h2 class="ac-header choice__accordion-text_1">
-              <button type="button" class="ac-trigger">Байкал</button>
-            </h2>
-            <div class="ac-panel">
-              <p class="ac-text">Архыз</p>
-              <p class="ac-text">Байкал</p>
-              <p class="ac-text">Калининград</p>
+    <form action="/" method="get" name="choices_form" >
+      <div class="choices">
+        <div class="choices-accordions">
+          <div class="choice__accordion choice__accordion_1">
+            <p class="choice__accordion-title">
+              <img src="/resources/media/map-pin.svg" alt="" /> место
+            </p>
+            <div class="ac">
+              <h2 class="ac-header choice__accordion-text_1">
+                <button type="button" class="ac-trigger">Байкал</button>
+              </h2>
+              <div class="ac-panel localsChoise">
+                <!-- <p class="ac-text">Архыз</p>
+                <p class="ac-text">Байкал</p>
+                <p class="ac-text">Калининград</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="choice__accordion choice__accordion_2">
+            <p class="choice__accordion-title">
+              <img src="/resources/media/user.svg" alt="" /> туристы
+            </p>
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">2 человека</button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">2 человека</p>
+                <p class="ac-text">3 человека</p>
+                <p class="ac-text">4 человека</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__accordion choice__accordion_3">
+            <p class="choice__accordion-title">
+              <img src="/resources/media/book-open.svg" alt="" />
+              продолжительность
+            </p>
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">5 дней</button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">4 дня</p>
+                <p class="ac-text">5 дней</p>
+                <p class="ac-text">6 дней</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="choice__accordion choice__accordion_2">
-          <p class="choice__accordion-title">
-            <img src="./src/media/image/user.svg" alt="" /> туристы
-          </p>
-          <div class="ac">
-            <h2 class="ac-header">
-              <button type="button" class="ac-trigger">2 человека</button>
-            </h2>
-            <div class="ac-panel">
-              <p class="ac-text">2 человека</p>
-              <p class="ac-text">3 человека</p>
-              <p class="ac-text">4 человека</p>
-            </div>
-          </div>
-        </div>
-        <div class="choice__accordion choice__accordion_3">
-          <p class="choice__accordion-title">
-            <img src="./src/media/image/book-open.svg" alt="" />
-            продолжительность
-          </p>
-          <div class="ac">
-            <h2 class="ac-header">
-              <button type="button" class="ac-trigger">5 дней</button>
-            </h2>
-            <div class="ac-panel">
-              <p class="ac-text">4 дня</p>
-              <p class="ac-text">5 дней</p>
-              <p class="ac-text">6 дней</p>
-            </div>
-          </div>
-        </div>
+        <button
+          class="choices-button"
+          type="submit"
+        >
+          искать
+        </button>
+        <!-- <button class="choices-button" type="submit">искать</button> -->
       </div>
-      <button
-        class="choices-button"
-        onclick="document.location='./src/pages/catalog.html'"
-      >
-        искать
-      </button>
-    </div>
+    </form>
     <section class="section-one">
       <h1 class="head-whywe">ПОЧЕМУ МЫ?</h1>
       <div class="lists-whywe">
         <ul>
-          <img src="./src/media/image/driving.svg" class="why-we-img" />
+          <img src="/resources/media/driving.svg" class="why-we-img" />
           <li class="list-whywe-element">НЕИЗВЕСТНЫЕ МАРШРУТЫ</li>
-          <img src="./src/media/image/galleryfavorite.svg" class="why-we-img" />
+          <img src="/resources/media/galleryfavorite.svg" class="why-we-img" />
           <li class="list-whywe-element">САМЫЕ АКТУАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</li>
-          <img src="./src/media/image/messagenotif.svg" class="why-we-img" />
+          <img src="/resources/media/messagenotif.svg" class="why-we-img" />
           <li class="list-whywe-element">
             ИНТЕРЕСНЫЕ ИСТОРИИ<br />
             ОТ МЕСТНЫХ ЖИТЕЛЕЙ
           </li>
         </ul>
         <ul class="list-two">
-          <img src="./src/media/image/profile2user.svg" class="why-we-img" />
+          <img src="/resources/media/profile2user.svg" class="why-we-img" />
           <li class="list-whywe-element">ТУРЫ ОТ ПУТЕШЕСТВЕННИКОВ</li>
-          <img src="./src/media/image/hearttick.svg " class="why-we-img" />
+          <img src="/resources/media/hearttick.svg " class="why-we-img" />
           <li class="list-whywe-element">
             ЛАЙФХАКИ И СОВЕТЫ<br />
             ОТ ПУТЕШЕСТВЕННИКОВ
           </li>
-          <img src="./src/media/image/medalstar.svg" class="why-we-img" />
+          <img src="/resources/media/medalstar.svg" class="why-we-img" />
           <li class="list-whywe-element">БЕЗОПАСНОСТЬ И ЭКСКЛЮЗИВНОСТЬ</li>
         </ul>
       </div>
@@ -145,12 +148,12 @@
         <div class="move_cards_block">
           <div class="move_card">
             <button class="clkBtn" onclick="leftClick()">
-              <img src="./src/media/image/arrowcircle.svg" />
+              <img src="/resources/media/arrowcircle.svg" />
             </button>
           </div>
           <div class="move_card">
             <button class="clkBtn" onclick="rightClick()">
-              <img src="./src/media/image/arrowcircle.svg" />
+              <img src="/resources/media/arrowcircle.svg" />
             </button>
           </div>
         </div>
@@ -214,26 +217,26 @@
             <video
               controls
               class="video_prev i1"
-              poster="./src/media/image/Video1.png"
+              poster="/resources/media/Video1.png"
               preload="metadata"
             >
-              <source type="video/mp4" src="./src/media/video/hsr.mp4" />
+              <source type="video/mp4" src="/resources/video/hsr.mp4" />
             </video>
             <video
               controls
               class="video_prev i2"
-              poster="./src/media/image/Video2.png"
+              poster="/resources/media/Video2.png"
               preload="metadata"
             >
-              <source type="video/mp4" src="./src/media/video/hsr.mp4" />
+              <source type="video/mp4" src="/resources/video/hsr.mp4" />
             </video>
             <video
               controls
               class="video_prev i3"
-              poster="./src/media/image/Video2.png"
+              poster="/resources/media/Video2.png"
               preload="metadata"
             >
-              <source type="video/mp4" src="./src/media/video/hsr.mp4" />
+              <source type="video/mp4" src="/resources/video/hsr.mp4" />
             </video>
           </div>
         </div>
@@ -258,7 +261,7 @@
           <div class="rewiews_card">
             <div class="avatar_img_block">
               <img
-                src="./src/media/image/avatar1.png"
+                src="/resources/media/avatar1.png"
                 alt=""
                 class="avatar_img"
               />
@@ -267,23 +270,23 @@
               <div class="author_name">Анастасия</div>
               <div class="author_mark">
                 <img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 />
@@ -301,7 +304,7 @@
           <div class="rewiews_card">
             <div class="avatar_img_block">
               <img
-                src="./src/media/image/avatar2.png"
+                src="/resources/media/avatar2.png"
                 alt=""
                 class="avatar_img"
               />
@@ -310,23 +313,23 @@
               <div class="author_name">Кирил</div>
               <div class="author_mark">
                 <img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 />
@@ -344,7 +347,7 @@
           <div class="rewiews_card">
             <div class="avatar_img_block">
               <img
-                src="./src/media/image/avatar3.png"
+                src="/resources/media/avatar3.png"
                 alt=""
                 class="avatar_img"
               />
@@ -353,23 +356,23 @@
               <div class="author_name">Антон</div>
               <div class="author_mark">
                 <img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 />
@@ -387,7 +390,7 @@
           <div class="rewiews_card">
             <div class="avatar_img_block">
               <img
-                src="./src/media/image/avatar4.png"
+                src="/resources/media/avatar4.png"
                 alt=""
                 class="avatar_img"
               />
@@ -396,23 +399,23 @@
               <div class="author_name">Глеб</div>
               <div class="author_mark">
                 <img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 /><img
-                  src="./src/media/image/markStar.png"
+                  src="/resources/media/markStar.png"
                   alt=""
                   class="markStar"
                 />
@@ -448,7 +451,7 @@
           <button class="form_btn" type="submit">ОТПРАВИТЬ</button>
         </div>
         <div class="form_img">
-          <img src="./src/media/image/mountain.png" alt=" рисунок гора" />
+          <img src="/resources/media/mountain.png" alt=" рисунок гора" />
         </div>
       </div>
     </section>
@@ -478,12 +481,12 @@
           <h3 class="footer_title">Приложения для вас</h3>
           <a href="#"
             ><img
-              src="./src/media/image/footer/googleplay.png"
+              src="/resources/media/footer/googleplay.png"
               alt="иконка googleplay"
           /></a>
           <a href="#"
             ><img
-              src="./src/media/image/footer/appstore.png"
+              src="/resources/media/footer/appstore.png"
               alt="иконка appstore"
           /></a>
         </div>
@@ -495,19 +498,19 @@
             <a href="#"
               ><img
                 class="footer_payCards_item"
-                src="./src/media/image/footer/visa.png"
+                src="/resources/media/footer/visa.png"
                 alt="карта виза"
             /></a>
             <a href="#"
               ><img
                 class="footer_payCards_item"
-                src="./src/media/image/footer/mir.png"
+                src="/resources/media/footer/mir.png"
                 alt="карта мир"
             /></a>
             <a href="#"
               ><img
                 class="footer_payCards_item"
-                src="./src/media/image/footer/mastercard.png"
+                src="/resources/media/footer/mastercard.png"
                 alt="карта мастеркард"
             /></a>
           </div>
@@ -518,19 +521,19 @@
             <a class="social_link" href="#"
               ><img
                 class="footer_sites_item"
-                src="./src/media/image/footer/vk.png"
+                src="/resources/media/footer/vk.png"
                 alt="иконка вк"
             /></a>
             <a class="social_link" href="#"
               ><img
                 class="footer_sites_item"
-                src="./src/media/image/footer/youtube.png"
+                src="/resources/media/footer/youtube.png"
                 alt="иконка ютуба"
             /></a>
             <a class="social_link" href="#"
               ><img
                 class="footer_sites_item"
-                src="./src/media/image/footer/telegram 1.png"
+                src="/resources/media/footer/telegram 1.png"
                 alt="иконка телеграма"
             /></a>
           </div>
@@ -544,7 +547,7 @@
     </footer>
 
     <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
-    <script src="./src/scripts/search_form.js"></script>
-    <script src="./src/scripts/index_cards_move.js"></script>
+    <script src="resources/scripts/search_form.js"></script>
+    <script src="resources/scripts/index_cards_move.js"></script>
   </body>
 </html>
