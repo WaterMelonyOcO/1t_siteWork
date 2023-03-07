@@ -31,8 +31,14 @@ route.get("/fonts/:font", function( request, response ){
 //     console.log(request.url);
 //     let data = request.params;
 //     let ContentType = request.url.toString()
+
 //     console.log("content type",ContentType);
 //     console.log("enter request file", data);
+
+//     if ( data.file.endsWith(data.file.endsWith("svg"))){
+//         response.statusCode(404)
+//         response.end()
+//     }
 //     fs.readFile(traverseDirIs(data.file), function( err, file ){
 //         if ( err ){
 //             response.sendStatus(404)
@@ -47,6 +53,28 @@ route.get("/fonts/:font", function( request, response ){
 //         }
 //     })
 // })
+
+route.get("/scripts/:file", function( request, response ){
+    console.log(request.url);
+    let data = request.params;
+    let ContentType = request.url.toString()
+    
+    console.log("content type",ContentType);
+
+    fs.readFile(srcFolder + "scripts/" + data.file, function( err, file ){
+        if ( err ){
+            response.sendStatus(404)
+            response.statusMessage = "not file"
+            console.log(err);
+            console.log("err in file:",data.file);
+        }
+        else{
+            response.contentType(response.type(ContentType))
+            response.statusCode = 200
+            response.end(file)
+        }
+    })
+})
 
 //генератор для обхода всех папок
 function* traverseDir(dirPath) {

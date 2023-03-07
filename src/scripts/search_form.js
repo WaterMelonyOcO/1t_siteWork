@@ -42,20 +42,38 @@ async function getLocals(){
     let el = document.createElement("p")
     el.textContent = loc
     el.setAttribute("class", "ac-text")
+    el.onclick = (e) => {document.getElementById("ac-trigger-0").textContent =
+    e.target.innerText}
     
     locals.appendChild(el)
   }
 
 }
 
+let localsName ={
+  "байкал": "baikal",
+  "алтай": "altay",
+  "архыз": "arhiz",
+  "дагестан": "dagestan",
+  "карелия": "kareliya",
+  "калининград": "kaliningrad",
+}
+
 // submit
 let form_tur = document.forms.choices_form
 form_tur.addEventListener("submit", (e) => {
   e.preventDefault()
-  let loc = form_tur.querySelector(".choice__accordion_1").value
-  let peopleCount = form_tur.querySelector(".choice__accordion_2").value
-  let dayCount = form_tur.querySelector(".choice__accordion_3").value
+  let url = e.target.getAttribute("action")
 
+  let loc = document.querySelector("#ac-trigger-0").textContent.toLocaleLowerCase()
+  let peopleCount = form_tur.querySelector("#ac-trigger-1").textContent.split(" ")[0]
+  let dayCount = form_tur.querySelector("#ac-trigger-2").textContent.split(" ")[0]
+
+  if ( loc.length !== 0) url += `?loc=${localsName[loc]}`
+  if ( peopleCount.length !== 0 ) url += `&count=${peopleCount}`
+  if ( dayCount.length !== 0 ) url += `&days=${dayCount}`
+  
+  window.location.href = url;
   
 })
 

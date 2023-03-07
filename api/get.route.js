@@ -25,10 +25,6 @@ route.get("/turs", function ( request, response ){
             response.send(JSON.stringify(data))
         }
     })
-
-
-
-
 })
 
 

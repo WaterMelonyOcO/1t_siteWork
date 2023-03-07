@@ -610,12 +610,27 @@ const cards = [
     },
 ]
 
+//получаю данные url
+let data = new URL(document.location).searchParams;
+let chLoc;
+let chDayCount;
+let peCount;
+try {
+    chLoc = data.get("loc").toString()
+    chDayCount = data.get("days")
+    peCount = data.get("count")
+} catch (error) {
+    chLoc = ""
+    chDayCount = 15
+    peCount = 2
+}
+
 
 // Проверка на 1 включенный чекбокс
 let inputs = document.getElementsByName("check");
 for (let i = 0; i < inputs.length; i++) {
-    inputs[i].onchange = checkboxHandler;
-    cards.onchange = checkboxHandler;
+    inputs[i].addEventListener('change', fillCards);
+    // cards.addEventListener('change', fillCards);
 }
 
 const sortByPrice = document.getElementById('sortByPrice')
@@ -628,8 +643,12 @@ document.getElementById("priceRange").addEventListener("change", function () {
     priceLabel.innerHTML = this.value
 })
 
-let daysCount = 15
+let daysCount = chDayCount
 daysLabel = document.getElementById('days_label')
+
+document.getElementById("daysRange").value = daysCount
+daysLabel.innerHTML = daysCount + ' дней'
+
 document.getElementById("daysRange").addEventListener("change", function () {
     daysCount = this.value
     daysLabel.innerHTML = this.value + ' дней'
@@ -644,19 +663,17 @@ const tourFind = document.getElementById('tourFind')
 
 // обработчик и фильтр параметров(локация, цена и т.д)
 function checkboxHandler() {
-    for (let i = 0; i < inputs.length; i++) {
-        if (inputs[i].checked && inputs[i] !== this)
-            inputs[i].checked = false;
-    }
-
-
-    document.addEventListener('change', () => {
-
+    // for (let i = 0; i < inputs.length; i++) {
+    //     if (inputs[i].checked && inputs[i] !== this)
+    //         inputs[i].checked = false;
+    // }
+    document.addEventListener('change', fillCards)
+}
+function fillCards(){
         // Получаем все checkbox
         const checkedValues = [...document.getElementsByName('check')]
             .filter(input => input.checked)
             .map(input => input.value);
-
         sortByPrice.addEventListener('click', () => {
             cards.sort((a, b) => {
                 return parseInt(a.price) - parseInt(b.price)
@@ -679,8 +696,8 @@ function checkboxHandler() {
         // Чистим прошлые карточки и создаем новые
         clearCards()
         genCard(filterDays)
-    });
-}
+    };
+
 
 // Берем основной div
 const cardBlock = document.getElementById('card-blocks')
@@ -821,5 +838,17 @@ function locDetect(loc){
 }
 
 checkboxHandler();
+
+// авто выбор тура
+for (let i = 0; i < inputs.length; i++) {
+    
+    inputs[i].checked = false; //очистка предыдущих нажатий
+
+    // если запрос и тур совпадают то автоматически выбирается тур
+    if (String(inputs[i].value) === chLoc){
+        inputs[i].checked = true
+        fillCards()
+    }
+}
 
 
