@@ -1,12 +1,15 @@
-const {Router, urlencoded} = require("express")
-const fs = require("fs")
-const path = require("path")
+const {Router, urlencoded, json} = require("express")
+const User = require("../db/models/user")
+const Role = require("../db/models/role")
+const cock = require("cookie-parser")
 
-const db = path.resolve("db")
+
 const urlParser = urlencoded({extended: false})
 let route = Router()
+route.use(cock())
 
-let candidateCode = []
+const candidate = []
+route.use(json())
 
 route.post("/", urlParser, function ( request, response ){
     if(!request.body) return response.sendStatus(400);
@@ -14,51 +17,52 @@ route.post("/", urlParser, function ( request, response ){
     let name = request.body.name
     let phone = request.body.tel
     
-    if ( existUserTest(phone) ){
-    response.redirect("/registered?err")
+    if ( !User.findOne({phoneNumber: phone}) ){
+    return response.redirect("/registered?err")
     
     
     }
-    else{
-       
-    candidateCode.push({code: Math.floor(Math.random()*10/2), phone, name})
-    console.log(candidateCode);
+    const cid = Math.floor(Math.random()*100/2)
+    candidate.push({cid: cid, code: Math.floor(Math.random()*10/2), phone, name})
+    console.log(candidate);
     // fs.writeFile(db + "/users.json", JSON.stringify(userData), (err)=>{console.log(err);})
+    response.cookie("cid", cid)
     response.redirect("/registered_auth")
     
-    }
 })
-route.post("/code", urlParser, function ( request, response ){
+route.post("/code", urlParser, async function ( request, response ){
     if(!request.body) return response.sendStatus(400);
 
 
-    let code = request.body.sms
-    console.log(candidateCode);
+    const code = request.body.sms
+    const id = request.cookies
+    console.log(id);
+
+    const newCandidate = getCandidate(id.cid)
+    console.log(newCandidate);
     console.log(code);
+
+    // const test = await User.findOne({phoneNumber: newCandidate.phone})
+    
     if ( !codeTest(code) ){
-    response.redirect("/registered_auth?err")
-    
-    
+        console.log("err reg");
+        return response.redirect("/registered_auth?err")   
     }
-    else{
-       
-    addNewUser(getCandidate(code))
+    if ( await User.findOne({phoneNumber: newCandidate.phone}) ){
+        console.log("user exist");
+        return response.status(400).json({message:"пользователь уже зарегестрирован"})
+    }
+    console.log("adding user \n");
+    const userRole = await Role.findOne({value:"USER"})
+    const newUser = new User({username: newCandidate.name, phoneNumber: newCandidate.phone, role: userRole.value})
+    await newUser.save()
     response.redirect("/enter")
     
-    }
 })
 
-function existUserTest (param) { 
-    let userData = JSON.parse(fs.readFileSync( db + "/users.json", "utf-8"))
-    for ( let i of userData){
-        if (i.phone === param){
-            return true
-        }
-    }
-}
 
 function codeTest (param) { 
-    for ( let i of candidateCode){
+    for ( let i of candidate){
         if (i.code === +param){
             return true
         }
@@ -66,18 +70,12 @@ function codeTest (param) {
 }
 
 function getCandidate(param){
-    for ( let i of candidateCode){
-        if (i.code === +param){
+    for ( let i of candidate){
+        if (+i.cid === +param){
             return i
         }
     }
 }
 
-function addNewUser(user){
-    let vuser = {name: user.name, phone: user.phone}
-    let userData = JSON.parse(fs.readFileSync( db + "/users.json", "utf-8"))
-    userData.push(vuser)
-    fs.writeFile(db + "/users.json", JSON.stringify(userData), (err)=>{console.log(err);})
-}
 
 module.exports = route

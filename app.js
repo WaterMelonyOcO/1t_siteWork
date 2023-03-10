@@ -3,11 +3,15 @@ const fs = require("fs")
 const path = require("path")
 const resources = require("./src/scripts/resource.route")
 const routers = require("./api")
+const mongo = require("mongoose")
 
 const mainPage = path.join(__dirname, "index.html")
 const elsePage = path.join(__dirname, "src/pages")
 
 const app = express()
+app.use(express.json())
+
+
 
 app.use(express.static(mainPage))
 app.use(express.static(elsePage))
@@ -51,4 +55,7 @@ app.get("/", function( request, response ){
 
 app.listen(5000, function(){
     console.log(`server work on localhost:5000`);
+    (async () => {
+        await mongo.connect("mongodb://192.168.0.106:27017/users").then(()=>{console.log("db connect");})
+    })()
 })
