@@ -8,7 +8,8 @@ const telInput = inputs[1]
 
 function checkTelephone(tel) {
     let re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
-    re.test( String(tel) )
+    return re.test( String(tel) )
+    // true
 }
 
 nameTel.onsubmit = function () {
@@ -30,10 +31,10 @@ nameTel.onsubmit = function () {
     }
 
     if (checkTelephone(telInputValue)) {
-        telInput.classList.add('errorInput')
-        return false
+        telInput.classList.remove('errorInput')
+        // return false
     }
     else {
-        telInput.classList.remove('errorInput')
+        telInput.classList.add('errorInput')
     }
 }

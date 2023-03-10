@@ -159,7 +159,7 @@
 }
 
 .number::before{
-    content: url("img/vector.png");
+    content: url("/resources/media/vector.png");
     position: relative;
     right: 10px;
     top: 4px;

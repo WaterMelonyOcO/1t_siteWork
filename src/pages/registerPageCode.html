@@ -5,40 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="../style/registerPageStyle.css" /> -->
-    <link rel="stylesheet" href="../style/registerBlank.css" />
-    <link rel="stylesheet" href="../style/header.css" />
-    <link rel="stylesheet" href="../style/footer.css" />
+    <!-- <link rel="stylesheet" href="/resources/style/registerPageStyle.css" /> -->
+    <link rel="stylesheet" href="/resources/style/registerBlank.css" />
+    <link rel="stylesheet" href="/resources/style/header.css" />
+    <link rel="stylesheet" href="/resources/style/footer.css" />
   </head>
   <body>
     <header id="header">
       <!-- логотип -->
       <div class="headerElements">
         <dev class="headerElement logoImg">
-          <a href="../../index.html"><img src="../media/image/logo.svg" /></a>
+          <a href="/"><img src="/resources/media/logo.svg" /></a>
         </dev>
       </div>
       <!-- пункты "наши туры" и т.д -->
       <div class="headerElements turLinks">
         <ul>
           <li class="headerElement turLink">
-            <a href="./about_us.html" class="turParticle">Кто мы</a>
+            <a href="/about_us" class="turParticle">Кто мы</a>
           </li>
           <li class="headerElement turLink">
             <a class="turParticle">Наши туры</a>
           </li>
           <li class="headerElement turLink">
-            <a href="./catalog.html" class="turParticle">В путешествие</a>
+            <a href="/catalog.html" class="turParticle">В путешествие</a>
           </li>
         </ul>
       </div>
       <!-- поиск -->
       <div class="headerElements">
         <dev class="headerElement serchFormBlock">
-          <form class="serchForm form" action="./error_pages.html" method="get">
+          <form class="serchForm form" action="/error_pages.html" method="get">
             <input name="serch" placeholder="поиск" type="search" />
             <button type="submit">
-              <img src="../media/image/search.png" alt="" />
+              <img src="/resources/media/search.png" alt="" />
             </button>
           </form>
         </dev>
@@ -46,21 +46,21 @@
       <!-- телефон и язык -->
       <div class="headerElements PhoneLangBlock">
         <div class="headerElement PhoneBlock">
-          <img class="phoneImg" src="../media/image/PhoneImg.png" />
+          <img class="phoneImg" src="/resources/media/PhoneImg.png" />
           <p class="phoneNumber">+7499374389</p>
         </div>
         <div class="headerElement LangBlock">
-          <img class="langImg" src="../media/image/globe.png" />
+          <img class="langImg" src="/resources/media/globe.png" />
         </div>
         <div class="headerElement burger">
-          <img class="burger_img" src="../media/image/burgmenu.png" />
+          <img class="burger_img" src="/resources/media/burgmenu.png" />
         </div>
       </div>
     </header>
     <section id="content">
       <div class="registerBlocks">
         <div class="Image">
-          <img src="../media/image/picture_welcome.png" alt="welcome" />
+          <img src="/resources/media/picture_welcome.png" alt="welcome" />
         </div>
         <div class="registerFildsBlockSub">
           <div class="wellcomeField">
@@ -70,7 +70,7 @@
             </div>
           </div>
           <div class="registerForm">
-            <form class="regForm" id="smsForm" action="../../index.html">
+            <form class="regForm" id="smsForm" method="post" action="/api/register/code">
               <div class="regField">
                 <label for="smsInput">
                   <p>Введите код из SMS</p>
@@ -79,8 +79,7 @@
                   class="secondInputs"
                   type="text"
                   tabindex="1"
-                  minlength="6"
-                  maxlength="6"
+                  
                   name="sms"
                   id="smsInput"
                 />
@@ -106,33 +105,33 @@
             <div class="socialLinks">
               <div class="socialLink">
                 <a href="#">
-                  <img src="../media/image/social1.svg" alt="logo google" />
+                  <img src="/resources/media/social1.svg" alt="logo google" />
                 </a>
               </div>
               <div class="socialLink">
                 <a href="#">
                   <img
-                    src="../media/image/social2.svg"
+                    src="/resources/media/social2.svg"
                     alt="logo odnoklassniki"
                   />
                 </a>
               </div>
               <div class="socialLink">
                 <a href="#">
-                  <img src="../media/image/social3.svg" alt="logo yandex" />
+                  <img src="/resources/media/social3.svg" alt="logo yandex" />
                 </a>
               </div>
               <div class="socialLink">
                 <a href="#">
-                  <img src="../media/image/social4.svg" alt="logo vk" />
+                  <img src="/resources/media/social4.svg" alt="logo vk" />
                 </a>
               </div>
             </div>
           </div>
           <div class="registerFilds">
             <div class="registerFildsBlock">
-              <a href="registerPage.html">Регистрация</a>
-              <a href="./enter.html">Вход</a>
+              <a href="/registered">Регистрация</a>
+              <a href="/enter">Вход</a>
             </div>
           </div>
         </div>
@@ -142,15 +141,15 @@
       <section class="top_footer">
         <div class="footer_column">
           <h3 class="footer_title">О нас</h3>
-          <a href="./about_us.html">Кто мы</a>
+          <a href="/about_u">Кто мы</a>
           <a href="#">Наши авторы</a>
-          <a href="./about_us.html#team">Наша команда</a>
+          <a href="/about_us#team">Наша команда</a>
           <a href="#">Партнеры</a>
         </div>
         <div class="footer_column">
           <h3 class="footer_title">Помощь</h3>
           <a href="№">Стать автором</a>
-          <a href="./catalog.html">Выбрать путешествие</a>
+          <a href="/catalog">Выбрать путешествие</a>
           <a href="#">Центр поддержки</a>
           <a href="#">Программа лояльности</a>
           <a href="#">Возврат</a>
@@ -164,12 +163,12 @@
           <h3 class="footer_title">Приложения для вас</h3>
           <a href="#"
             ><img
-              src="../media/image/footer/googleplay.png"
+              src="/resources/media/googleplay.png"
               alt="иконка googleplay"
           /></a>
           <a href="#"
             ><img
-              src="../media/image/footer/appstore.png"
+              src="/resources/media/appstore.png"
               alt="иконка appstore"
           /></a>
         </div>
@@ -181,19 +180,19 @@
             <a href="#"
               ><img
                 class="footer_payCards_item"
-                src="../media/image/footer/visa.png"
+                src="/resources/media/visa.png"
                 alt="карта виза"
             /></a>
             <a href="#"
               ><img
                 class="footer_payCards_item"
-                src="../media/image/footer/mir.png"
+                src="/resources/media/mir.png"
                 alt="карта мир"
             /></a>
             <a href="#"
               ><img
                 class="footer_payCards_item"
-                src="../media/image/footer/mastercard.png"
+                src="/resources/media/mastercard.png"
                 alt="карта мастеркард"
             /></a>
           </div>
@@ -204,19 +203,19 @@
             <a href="#"
               ><img
                 class="footer_sites_item"
-                src="../media/image/footer/vk.png"
+                src="/resources/media/vk.png"
                 alt="иконка вк"
             /></a>
             <a href="#"
               ><img
                 class="footer_sites_item"
-                src="../media/image/footer/youtube.png"
+                src="/resources/media/youtube.png"
                 alt="иконка ютуба"
             /></a>
             <a href="#"
               ><img
                 class="footer_sites_item"
-                src="../media/image/footer/telegram 1.png"
+                src="/resources/media/telegram 1.png"
                 alt="иконка телеграма"
             /></a>
           </div>
@@ -229,5 +228,6 @@
       </section>
     </footer>
   </body>
-  <script src="../scripts/validate2.js"></script>
+  <script src="/resources/scripts/validate2.js"></script>
+  <script src="/resources/scripts/registerValidate.js"></script>
 </html>

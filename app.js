@@ -14,11 +14,36 @@ app.use(express.static(elsePage))
 
 
 app.use("/api/get/", routers.gets)
+app.use("/api/register", routers.register)
+app.use("/api/enter", routers.enter)
 app.use('/resources/', resources)
 
+//на страницы
 app.get("/turs", function( request, response ){
     response.sendFile(elsePage + "/catalog.html")
 })
+app.get("/about_us", function( request, response ){
+    response.sendFile(elsePage + "/about_us.html")
+})
+
+app.get("/enter", function( request, response ){
+    response.sendFile(elsePage + "/enter.html")
+})
+app.get("/enter_auth", function( request, response ){
+    response.sendFile(elsePage + "/enterCode.html")
+})
+
+app.get("/registered", function( request, response ){
+    response.sendFile(elsePage + "/registerPage.html")
+})
+app.get("/registered_auth", function( request, response ){
+    response.sendFile(elsePage + "/registerPageCode.html")
+})
+app.get("/error_pages", function( request, response ){
+    response.sendFile(elsePage + "/error_pages.html")
+})
+
+
 
 app.get("/", function( request, response ){
     response.sendFile(mainPage)
